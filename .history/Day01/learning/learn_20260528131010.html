@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 01 Of Frontend Learning</title>
+    <link rel="icon" type="image/x-icon" href="https://img.freepik.com/free-psd/3d-rendered-html-file-icon_84443-57041.jpg?semt=ais_hybrid&w=740&q=80">
+</head>
+
+<body>
+    <p>This is learning time of HTML ( without CSS & JS )</p>
+    <p><mark style="background-color: red">(1) Heading Tags</mark></p>
+    <h1>This is H1 tag = Biggest Heading</h1>
+    <h2>This is H1 tag = Bigger Heading</h2>
+    <h3>This is H1 tag = Big Heading</h3>
+    <h4>This is H1 tag = Small Heading</h4>
+    <h5>This is H1 tag = Smaller Heading</h5>
+    <h6>This is H1 tag = Smallest Heading</h6>
+    <br>
+    <p><mark style="background-color: red">(2) This is Paragraph tag</mark></p>
+    <p>Example : Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam illum facilis ipsam perspiciatis quis
+        neque ab repellendus adipisci minus inventore dignissimos rem commodi accusamus ad qui possimus natus, excepturi
+        tempora porro quae laboriosam corporis laborum! Natus atque sint laboriosam ad, voluptatibus doloremque facere
+        saepe molestias.</p>
+    <br>
+    <p><mark style="background-color: red">(3) Text Formatting tags</mark></p>
+    <p><b>(bold)</b> <i>(italic)</i> dolor, sit <sub>(subscript)</sub> consectetur adipisicing elit. Ex, excepturi
+        sequi! Asperiores sit saepe rem totam
+        neque provident <sup>(Superscript)</sup> accusamus <small>(smalltext)</small> quasi <mark>Marked</mark> sint
+        commodi maiores pariatur fuga voluptates ipsam doloremque
+        <ins>(Inserted)</ins> ex <strong>(Important text)</strong> <del>(delete)</del>, deleniti veritatis quisquam
+        perspiciatis dolores alias. Molestias quaerat, facere
+        <em>Emphasized</em> aliquam quo modi <strike>(strike)</strike> quisquam dolor eaque.
+    </p>
+    <p><mark style="background-color: red">(4) Quotation and Citation</mark></p>
+    <p><blockquote>Blockquote</blockquote> Lorem <q>ipsum(Quotation)</q> dolor <b>BDO text {right to left}==</b><bdo dir="rtl">(Hello World)</bdo> sit <cite>Citations</cite> amet consectetur adipisicing elit. Assumenda, minus laborum sed quibusdam mollitia fugit,
+        <abbr title="Bangladesh">BD(Abbribiation)</abbr> qui <address>Dhaka(address)</address>vero sunt soluta incidunt. Itaque eos veniam, doloremque quisquam molestias culpa repellendus cumque!
+    </p>
+    <p><mark style="background-color: red">(5) Comments</mark></p>
+    <!-- Write your comments here -->
+     <p><!-- Write your comments here --> this is a comment which you can not see</p>
+
+    <p><mark style="background-color: red">(6) Image Tag</mark></p>
+    <img src="https://img.freepik.com/free-psd/3d-rendered-html-file-icon_84443-57041.jpg?semt=ais_hybrid&w=740&q=80" alt="This is An Html Logo">
+    <img src="url" alt="Alternate Text if URL not found" >
+    <p>Image Mapping : Click Computer , Mobile and Coffee to see Magic</p>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap">
+    
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Phone">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="https://en.wikipedia.org/wiki/Coffee">
+    </map>
+    <p>Picture Tag (Change the display size to see Magic)</p>
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://restaurantindia.s3.ap-south-1.amazonaws.com/s3fs-public/content6560.jpg">
+        <source media="(min-width: 465px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJVY3XKVh1Tq5oxzRR5TUb4VynG4u7jf8eg&s">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTqYourk8UmyKAT-SBCLaqP6RfZUmNx7ZNw&s">
+    </picture>
+    <p>Fav icon Tag in head tag :  &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;</p>
+    <p><mark style="background-color: red">(7) Table Tags </mark></p>
+    
+    <table border="1">
+        <tr>
+            <th>No.</th>
+            <th>Entity Code</th>
+            <th>Character Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>&amp;lt;</td>
+            <td>Less-than sign (&lt;)</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>&amp;gt;</td>
+            <td>Greater-than sign (&gt;)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>&amp;amp;</td>
+            <td>Ampersand (&amp;)</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>&amp;nbsp;</td>
+            <td>Non-breaking space</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>&amp;quot;</td>
+            <td>Double quote (&quot;)</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>&amp;apos;</td>
+            <td>Single quote (&apos;)</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>&amp;cent;</td>
+            <td>Cent sign (&cent;)</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>&amp;pound;</td>
+            <td>Pound sign (&pound;)</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>&amp;yen;</td>
+            <td>Yen sign (&yen;)</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>&amp;euro;</td>
+            <td>Euro sign (&euro;)</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>&amp;copy;</td>
+            <td>Copyright symbol (&copy;)</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>&amp;reg;</td>
+            <td>Registered trademark (&reg;)</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>&amp;trade;</td>
+            <td>Trademark symbol (&trade;)</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>&amp;deg;</td>
+            <td>Degree symbol (&deg;)</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>&amp;plusmn;</td>
+            <td>Plus-minus sign (&plusmn;)</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>&amp;times;</td>
+            <td>Multiplication sign (&times;)</td>
+        </tr>
+    </table>
+    <p><mark style="background-color: red">(8) Ordered list</mark></p>
+    <ol>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Apple</li>
+    </ol>
+    <p><mark style="background-color: red">(9) Unordered list</mark></p>
+    <ul>
+        <li>Milk</li>
+        <li>Tea</li>
+        <li>Coffee</li>
+    </ul>
+    <p><mark style="background-color: red">(10) Data list</mark></p>
+    <dl>
+        <dt>Milk</dt>     
+        <dd>White cold drink</dd>
+        <dt>Coffee</dt>
+        <dd>Black hot drink</dd>
+    </dl>
+    <p><mark style="background-color: red">(11) Inline Elements</mark></p>
+        <span style="border: 1px solid blue">inline1</span>
+        <span style="border: 1px solid blue">inline2</span>
+        <span style="border: 1px solid blue">inline3</span>
+        <span style="border: 1px solid blue">inline4</span>
+    <p><mark style="background-color: red">(12) Block Element</mark></p>
+        <div style="border: 1px solid blue">block1</div>
+        <div style="border: 1px solid blue">block2</div>
+        <div style="border: 1px solid blue">block3</div>
+        <div style="border: 1px solid blue">block4</div>
+    <p><mark style="background-color: red">(13) Iframe tag</mark></p>
+    <code>&lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;</code>
+    
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14612.82012168958!2d90.4036352!3d23.704371199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20headquarters%20address!5e0!3m2!1sen!2sbd!4v1779951861998!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p><mark style="background-color: red">(14) Embad video</mark></p>
+        <iframe controls width="560" height="315" src="https://www.youtube.com/embed/WAvchbP2kXM?si=oAh3J17kHq1WMbow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>
