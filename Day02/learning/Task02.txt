@@ -1,0 +1,139 @@
+DAY 02 GOAL
+Learn : Forms + Semantic HTML + Better Structure
+Project : Student Registration Form Website (WEBSITE STRUCTURE)
+TimeSpend : 
+    12.00AM - 3.00PM 
+
+Learn:
+1. Forms
+2. Semantic HTML
+3. Better page structure
+
+Build: { A Student Registration Form Website }
+[ login, signup, contact, checkout, applications ]
+
+Learn Semantic HTML
+Que: What is Semantic HTML?
+Answer: Semantic HTML is the practice of using HTML tags that clearly describe the meaning and purpose of the content they contain, rather than just how it should look.Semantic tags describe the meaning of content.
+
+Que: How Semantic Tag helps us?
+Ans: 
+    1. readability
+    2. SEO {Search engines like Google use these tags to better understand and index your content, which can improve your search rankings}
+    3. accessibility { Screen readers use semantic tags as landmarks, allowing users with visual impairments to navigate a page more easily.}
+    4. professional coding structure
+    5. Code Maintainability { Semantic code is easier for developers to read and manage because the structure clearly follows a logical outline.}
+
+Que: Some Common Semantic Tags Example ?
+Ans: 
+    <header> - The introductory section of a page or article, often containing a logo or navigation.
+    <nav> - A section intended for navigation links.
+    <main> - The primary, unique content of the document (only one per page).
+    <section> - A thematic grouping of content, typically with a heading.
+    <article> - Independent, self-contained content like a blog post or news story.
+    <aside> - Content indirectly related to the main text, often placed as a sidebar.
+    <footer> - The bottom section of a page, usually containing contact info or copyright data.
+
+Instead of: div tag we can use them || <header></header> | <nav></nav> | <section></section> | <footer></footer> ||
+
+Header Code:
+<header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+</header>
+
+Nav Code: 
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+
+## IMPORTANT FORM TAGS ##
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+
+Input Types:  
+     | text | tel | email | password | number | date | color | button | radio | checkbox | datetime-local |
+     | file | hidden | image | month | range | reset | submit | search | time | url | week |
+
+Select Dropdown
+<select>
+   <option>CSE</option>
+   <option>BBA</option>
+</select>
+
+Form Actions: 
+1. accept-charset - 	Specifies the character encodings used for form submission
+2. action	 - Specifies where to send the form-data when a form is submitted
+3. autocomplete	 - Specifies whether a form should have autocomplete on or off
+4. enctype	- Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+5. method	 - Specifies the HTTP method to use when sending form-data
+6. name	 - Specifies the name of the form
+7. novalidate - 	Specifies that the form should not be validated when submitted
+8. rel	 - Specifies the relationship between a linked resource and the current document
+9. target	 - Specifies where to display the response that is received after submitting the form
+
+Input Restrictions
+1. checked	- Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+2. disabled	 - Specifies that an input field should be disabled
+3. max	 - Specifies the maximum value for an input field
+4. maxlength	 - Specifies the maximum number of character for an input field
+5. min	 - Specifies the minimum value for an input field
+6. pattern	 - Specifies a regular expression to check the input value against
+7. readonly	 - Specifies that an input field is read only (cannot be changed)
+8. required	 - Specifies that an input field is required (must be filled out)
+9. size	 - Specifies the width (in characters) of an input field
+10. step	 - Specifies the legal number intervals for an input field
+11. value	 - Specifies the default value for an input field
+
+
+PROJECT: Student Registration Form Website
+
+Header
+Website title: Student Registration
+Navigation
+
+Links: { Home | About | Contact | Registration Form }
+
+Include:
+1. Full Name
+2. Email
+3. Password
+4. Phone Number
+5. Birth Date
+6. Department dropdown
+7. About Yourself textarea
+8. Submit Button
+
+Footer :Simple copyright text.
+
+
+## CLEANUP + PRACTICE ##
+fix indentation
+organize tags
+improve readability
+VERY IMPORTANT TODAY
+Learn indentation properly
+
+
+MDN HTML Forms Guide
+
+## Outcomes ##
+✅  I can create forms myself
+✅  I understand semantic Tags of HTML
+✅  I can use labels and inputs
+✅  I built registration form project
+✅  I can rebuild some parts from memory
