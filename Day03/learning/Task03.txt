@@ -1,0 +1,375 @@
+DAY 03 GOAL — CSS Fundamentals
+
+Learn :  
+CSS Basics + Colors + Backgrounds + Fonts + Text Styling + Borders + Margins + Padding
+
+Project : Student Registration Form Website V2 (With CSS)
+TimeSpend : 
+    1.00AM - 3.00PM 
+
+
+#### Basic knowledge About CSS and Interview Ques-Ans ####
+HTML = Structure-  Defines the content structure (e.g., text, images, buttons).
+CSS = Appearance-  Controls the appearance (e.g., colors, fonts, sizing, positioning).
+
+
+Que: What is CSS?
+Ans: CSS (Cascading Style Sheets) is the code used to style a webpage and control how its elements are visually presented to users. While HTML provides the structural skeleton of a page, CSS applies the paint, layout, and typography to make it visually appealing.
+
+Que: Core Benefits of CSS?
+Ans: 
+    1. Design Flexibility: Changes colors, fonts, backgrounds, and animations.
+    2. Responsive Layouts: Adapts designs across mobile, tablet, and desktop screens.
+    3. Code Efficiency: Styles multiple webpages using a single stylesheet file.
+    4. Faster Loading: Separates design from content to reduce file sizes.
+
+Que: Ways to Add CSS?
+Ans: There are 3 Ways to Apply CSS
+    1. Inline: Added directly inside an HTML tag using the style attribute.
+    2. Internal: Written inside a <style> block in the HTML document's <head>.
+    3. External: Linked from a separate .css file (the industry best practice).
+
+Inline CSS-----Not recommended.
+    <h1 style="color:red;">Hello</h1>
+
+Internal CSS------Place inside <head>.
+<style>
+Tagname{
+    Properties:value;
+}
+</style>
+
+
+External CSS (Best Practice)
+<link rel="stylesheet" href="style.css">
+Then create:  style.css
+
+Que: What is the difference between margin and padding, and how does the box-sizing property affect them?
+Ans: 
+    Margin creates space around (outside) an element's border, separating it from other elements. 
+    Padding creates space inside an element, separating its content from its own border.
+    
+    By default, adding padding or borders increases the actual physical size of an element.
+    The box-sizing property alters this mathematical formula, controlling whether padding and borders are added to the width/height or absorbed within it.
+
+Que: What is margin collapsing, and when does it occur?
+Ans: 
+    Margin collapsing is a CSS behavior where the top and bottom margins of adjacent block-level elements combine (collapse) into a single margin, rather than adding together.
+    The browser resolves this conflict by applying only the largest single margin value.
+
+Que: What is the difference between setting an element's opacity using opacity: 0.5 versus using an rgba() color value?
+Ans: 
+    The opacity property applies transparency to the entire element, including its background, borders, text, and all child elements.
+    An rgba() value applies transparency exclusively to the specific color property it is assigned to (like the background), leaving the child elements completely opaque.
+
+Que: How do you make a background image scale to completely fill its container without distorting its aspect ratio?
+Ans:
+    To completely fill a container without stretching or distorting the image, you combine background-size: cover with background-position: center.
+
+Que: What is the difference between em, rem, and px units when styling font sizes?
+Ans:
+    px is an absolute, fixed static unit, while 
+    em and rem are relative units that dynamically recalculate scale based on font-size definitions.
+
+Que: What is a web-safe font stack, and why do we include fallback fonts in the font-family property?
+Ans:
+    A font stack is a prioritized list of fonts declared in CSS.
+    We use fallback fonts because browsers can only render a font if it is locally installed on the user's device or successfully downloaded via a web service (like Google Fonts).
+        font-family: "CustomFont", Arial, sans-serif;
+
+Que: Which CSS property would you use to prevent long words or URLs from breaking out of their text container?
+Ans:
+    To safely control text overflows caused by unbreakable, 
+    contiguous strings like long URLs or compound words,
+    use overflow-wrap: break-word (formerly known as word-wrap).
+
+Que: How do you create a perfect circle using only HTML and CSS?
+Ans:
+    To render a perfect circle, you must apply three mandatory properties to an element: ensure the block has an exact 1:1 aspect ratio (equal width and height), and set the border-radius to 50%.
+
+Que: How can you add a border to an element without changing its dimensions or shifting surrounding layout?
+Ans:
+    Standard CSS borders add thickness outside the content box, which can alter element calculations and create visual "layout shifts". To add a border outline without modifying the box dimensions, you can use either the outline property or an inset box-shadow.
+
+Que: What is the shorthand syntax for setting individual margins or paddings on all four sides of an element?
+Ans:
+    The shorthand syntax accepts up to four values and processes them sequentially following a clockwise rotation rule: Top, Right, Bottom, Left (abbreviated as TRBL).
+
+
+
+
+####    Learn Basic CSS Properties      ####
+Documentation : 
+1. https://www.w3schools.com/css/
+2. https://developer.mozilla.org/en-US/docs/Web/CSS
+3. https://web.dev/learn/css
+
+CSS Single Line Comments:  
+    /* This is a single-line comment */
+CSS Multi Line Comments: 
+    /* This is
+    a multi-line
+    comment */
+
+Css Colors 
+    1. RGB -- rgb(210, 210, 210)
+        RED, GREEN , BLUE
+    2. RGBA -- rgba(210, 210, 210 , 0.5)
+        RED, GREEN , BLUE , 
+    3. HEX -- #AA25AA #aa26aa
+        #rrggbb in hexadecimal form
+    4. HSL -- hsl(0, 100%, 50%)
+        hsl(hue, saturation, lightness)
+
+Background
+    1. background-color
+    2. background-position
+        left top        left center         left bottom
+        right top       right center        right bottom
+        center top      center center       center bottom
+    3. background-image  -  url|none|initial|inherit;
+    4. background-repeat  - repeat|repeat-x|repeat-y|no-repeat|initial|inherit;
+    5. background-attachment  -  scroll|fixed|local|initial|inherit;
+        scroll	The background image will scroll with the page. This is default
+        fixed	The background image will not scroll with the page
+        local	The background image will scroll with the element's contents
+        initial	Sets this property to its default value. Read about initial
+        inherit	Inherits this property from its parent element. Read about inherit
+    6. background-size  - auto|length|cover|contain|initial|inherit;
+    7. background  -- lightblue url("img_tree.gif") no-repeat fixed center;
+    8. background-origin  - padding-box|border-box|content-box|initial|inherit;
+    9. background-clip  - border-box|padding-box|content-box|initial|inherit;
+    10. background-position-x
+    11. background-position-y
+
+CSS Border
+    1.  border-style 
+        dotted - Defines a dotted border
+        dashed - Defines a dashed border
+        solid - Defines a solid border
+        double - Defines a double border
+        groove - Defines a 3D grooved border. The effect depends on the border-color value
+        ridge - Defines a 3D ridged border. The effect depends on the border-color value
+        inset - Defines a 3D inset border. The effect depends on the border-color value
+        outset - Defines a 3D outset border. The effect depends on the border-color value
+        none - Defines no border
+        hidden - Defines a hidden border
+    2.  border-spacing: length|initial|inherit;
+    3.  border-radius: 1-4 length|% / 1-4 length|%|initial|inherit;
+    4.  border-image: source slice width outset repeat|initial|inherit;
+    5.  border-collapse: separate|collapse|initial|inherit;
+
+CSS Border - Individual Sides
+        border-top-style
+        border-right-style
+        border-bottom-style
+        border-left-style
+
+CSS Font 
+    1.  font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit;
+    2.  font-family: family-name|generic-family|initial|inherit;
+    3.  font-style: normal|italic|oblique|initial|inherit;
+    4.  font-weight: normal|bold|bolder|lighter|number|initial|inherit;
+
+
+Text 
+    1. Align And Direction
+        text-align: left|right|center|justify|initial|inherit;
+        text-align-last: auto|left|right|center|justify|start|end|initial|inherit;
+        vertical-align: baseline|length|sub|super|top|text-top|middle|bottom|text-bottom|initial|inherit;
+        direction: ltr|rtl|initial|inherit;
+        unicode-bidi: normal|embed|bidi-override|initial|inherit;
+    2. text-decoration
+        text-decoration-line: none|underline|overline|line-through|initial|inherit;
+        text-decoration-color: color|initial|inherit;
+        text-decoration-style: solid|double|dotted|dashed|wavy|initial|inherit;
+        text-decoration-thickness: auto|from-font|length/percentage|initial|inherit;
+    3. text-transform
+        text-transform: none|capitalize|uppercase|lowercase|initial|inherit;
+    4. text-shadow
+        text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+    5. text-justify: auto|inter-word|inter-character|none|initial|inherit;
+    6. text-orientation: mixed|upright|sideways|sideways-right|use-glyph-orientation|initial|inherit;
+    7. text-overflow: clip|ellipsis|string|initial|inherit;
+    8. text-underline-offset: auto|length|percentage|initial|inherit;
+    9. text-underline-position: auto|under|from-font|left|right|initial|inherit;
+    10. text-indent: length|initial|inherit;
+    11. text-emphasis: none|filled|open|dot|circle|double-circle|triangle|sesame|string|color|initial|inherit;
+    12. text-spacing
+        letter-spacing: normal|length|initial|inherit;
+        line-height: normal|number|length|initial|inherit;
+        word-spacing: normal|length|initial|inherit;
+        white-space: normal|nowrap|pre|pre-line|pre-wrap|initial|inherit;
+        
+
+CSS Icons
+    1. Google -- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    2. Fontawesome --<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    3. Bootstrap --<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+CSS list
+    1. list-style-type: circle|square|upper-roman|lower-alpha|disc|armenian|cjk-ideographic|decimal|
+       decimal-leading-zero|georgian|hebrew|hiragana-iroha|lower-greek|lower-latin|lower-roman|none|
+       upper-alpha|upper-greek|upper-latin|upper-roman|
+    
+
+Padding = Space INSIDE.
+   padding = (padding-top) + (padding-left) + (padding-bottom) + (padding-right);
+
+Margin = Space OUTSIDE.
+    margin = (margin-top) + (margin-left) + (margin-bottom) + (margin-right);
+Margin
+ ┌─────────────┐
+ │  Padding    │
+ │   Content   │
+ └─────────────┘
+
+Outline
+    1. outline-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;
+    2. outline-color: color|initial|inherit;
+    3. outline-width: medium|thin|thick|length|initial|inherit;
+    4. outline-offset 
+    5. outline
+    
+
+Hour 3 — Project
+🎯 Project:
+
+Student Registration Form Website V2
+
+Use yesterday's project.
+
+Step 1
+
+Create:
+
+index.html
+style.css
+Step 2
+
+Connect CSS
+
+<link rel="stylesheet" href="style.css">
+Step 3
+
+Style Body
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+Step 4
+
+Style Header
+
+header{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+Step 5
+
+Style Navigation
+
+nav{
+    text-align: center;
+    margin: 20px;
+}
+Step 6
+
+Style Forms
+
+form{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+Step 7
+
+Style Buttons
+
+button{
+    padding: 10px 20px;
+}
+Step 8
+
+Style Footer
+
+footer{
+    text-align:center;
+    background-color:black;
+    color:white;
+    padding:20px;
+}
+Hour 4 — Practice Challenge
+
+Without tutorial help:
+
+Create a new page:
+
+Contact Page
+
+Include:
+
+Name
+Email
+Message
+Submit Button
+
+Apply CSS:
+
+Background color
+Border
+Padding
+Margin
+Font styling
+🧠 Today's Important Concepts
+CSS Selector
+h1{
+    color:red;
+}
+
+Targets all h1 tags.
+
+Class Selector
+
+HTML:
+
+<div class="box">
+
+CSS:
+
+.box{
+    background-color:white;
+}
+ID Selector
+
+HTML:
+
+<div id="header">
+
+CSS:
+
+#header{
+    background-color:blue;
+}
+
+❌ Don't Learn Today
+Flexbox
+Grid
+JavaScript
+React
+
+Before ending today:
+✅ Created style.css
+✅ Linked CSS to HTML
+✅ Used colors
+✅ Used background-color
+✅ Used font-size
+✅ Used border
+✅ Used border-radius
+✅ Used padding
+✅ Used margin
+✅ Styled yesterday's form project
+✅ Built a small contact page

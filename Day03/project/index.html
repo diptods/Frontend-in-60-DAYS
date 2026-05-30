@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration Form Website (WEBSITE STRUCTURE)</h1>
+    </header>
+    <nav>
+        <a href="/">      Home       </a>
+        <a href="/">      About      </a>
+        <a href="/">     Contact     </a>
+        <a href="/">      Login      </a>
+        <a href="/">  Registration   </a>
+    </nav>
+
+    <h4>Login Form</h4>
+    <form class="login_form">
+        
+            <label for="user-id">Login Id </label>
+            <input type="text" class="user-id" id="user-id" placeholder="Enter User ID">
+                <br><br>
+            <label for="password">Password </label>
+            <input type="password" class="password" id="password" placeholder="enter Password">
+                <br><br>
+            <button type="submit">Submit</button>
+       
+    </form>
+    <br><br>
+     <h4>Registration Form</h4>
+    <form class="registration_form">
+     
+            <label for="full_name">Full Name : </label>
+            <input type="text" id="full_name" class="full_name" placeholder="E.g., John Doe " required>
+            <br><br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" class="email" placeholder="E.g., diptodas@email.com " required>
+            <br><br>
+            <label for="phone">Phone :</label>
+            <input type="tel" id="phone" class="phone" placeholder="E.g., +880-123-456-789 " required>
+            <br><br>
+            <label for="dob">Date Of Birth :</label>
+            <input type="date" id="dob" class="dob">
+            <br><br>
+            <label for="department">Your Department : </label>
+            <select name="department" id="department">
+                <option value="CSE" selected>CSE</option>
+                <option value="BBA">BBA</option>
+                <option value="Management">Management</option>
+                <option value="Physics">Physics</option>
+                <option value="math">Math</option>
+            </select>
+            <br><br>
+            <label for="sms">Enter Your Comments Here : </label><br>
+            <textarea name="sms" id="sms" rows="6" cols="50" placeholder="Enter...."></textarea>
+            <br><br>
+            <div style="display: flex; gap:6px;">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </div>
+    </form>
+    <br>
+    <footer style="color: aliceblue; background-color: darkslategrey; height:60px; width: auto; align-content: center; align-items: center;"><center>Simple copyright text.</center></footer>
+</body>
+</html>
+
