@@ -1,0 +1,260 @@
+🚀 DAY 04 — CSS Layout Mastery (Flexbox)
+
+DAY 04 GOAL
+Learn : CSS Layout Mastery (Flexbox)
+Project : A Simple Personal Profile Page
+TimeSpend : 
+    11.30AM - 1.30PM 
+
+
+Learn: {Flexbox , Alignment , Spacing , Horizontal layouts , Vertical layouts}
+Build:  A Modern Personal Portfolio Homepage
+
+
+Why Flexbox Matters
+
+Almost every modern website uses Flexbox.
+
+Examples:
+
+Navigation bars
+Hero sections
+Cards
+Pricing sections
+Dashboards
+
+If you understand Flexbox well, your frontend journey becomes much easier.
+
+⏰ Total Time: 4 Hours
+Hour 1 — Learn Flexbox Basics
+Display Flex
+
+HTML:
+
+<div class="container">
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+</div>
+
+CSS:
+
+.container{
+    display: flex;
+}
+
+Without Flexbox:
+Boxes stack vertically.
+
+With Flexbox:
+Boxes appear horizontally.
+
+Flex Direction
+.container{
+    display:flex;
+    flex-direction:row;
+}
+
+Default:
+
+row
+
+Horizontal.
+
+.container{
+    flex-direction:column;
+}
+
+Vertical.
+
+Hour 2 — Alignment
+justify-content
+
+Controls horizontal alignment.
+
+Left
+justify-content:flex-start;
+Center
+justify-content:center;
+Right
+justify-content:flex-end;
+Space Between
+justify-content:space-between;
+
+Very important.
+
+align-items
+
+Controls vertical alignment.
+
+align-items:center;
+
+This is used everywhere.
+
+Example
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+Hour 3 — Build Project
+Project:
+
+Modern Portfolio Homepage
+
+Structure
+Header
+Logo
+Navigation
+
+Example:
+
+LOGO          Home About Projects Contact
+
+Use Flexbox.
+
+Hero Section
+
+Left Side:
+
+Your name
+CSE Student
+Frontend Developer
+
+Right Side:
+
+Profile image
+
+Use Flexbox.
+
+Skills Section
+
+Create 3 skill cards:
+
+HTML
+CSS
+Learning JavaScript
+
+Use Flexbox.
+
+Footer
+
+Simple footer.
+
+Hour 4 — Flexbox Challenges
+
+Create:
+
+Challenge 1
+
+Three cards side-by-side.
+
+Card 1   Card 2   Card 3
+Challenge 2
+
+Centered box.
+
+     BOX
+
+Perfectly centered.
+
+Challenge 3
+
+Navigation menu.
+
+Logo          Home About Contact
+
+Use:
+
+display:flex;
+justify-content:space-between;
+Important Concepts
+Gap
+
+Instead of many margins:
+
+.container{
+    gap:20px;
+}
+
+Cleaner.
+
+Flex Wrap
+flex-wrap:wrap;
+
+Allows items to move to next line.
+
+Useful for responsive layouts.
+
+Width
+
+Example:
+
+.card{
+    width:300px;
+}
+Real Developer Tip
+
+Most beginners spend too much time choosing colors.
+
+Professional developers spend more time on:
+
+spacing
+alignment
+layout
+
+A website with perfect spacing but simple colors often looks better than a colorful website with poor layout.
+
+Mini Challenge (Important)
+
+Without tutorial help:
+
+Build:
+
+Product Cards Section
+
+Each card contains:
+
+Product image placeholder
+Product title
+Price
+Buy button
+
+Place 3 cards in one row using Flexbox.
+
+Things NOT to Learn Today
+❌ Grid
+❌ JavaScript
+❌ React
+
+Master Flexbox first.
+
+Day 04 Success Checklist
+
+Before ending today:
+✅ Understand display:flex
+✅ Understand flex-direction
+✅ Understand justify-content
+✅ Understand align-items
+✅ Understand gap
+✅ Built portfolio homepage
+✅ Built navigation bar
+✅ Built hero section
+✅ Built skill cards
+✅ Built product cards challenge
+
+🎯 After Day 04
+
+You should be able to create layouts that actually resemble modern websites.
+
+This is a huge milestone.
+
+Many beginners know HTML and CSS but struggle with layout. Once Flexbox clicks, you'll start feeling like a real frontend developer rather than someone just placing elements on a page.
+
+When you finish Day 04, send me:
+
+your HTML
+your CSS
+what felt difficult
+
+and I'll review it and prepare Day 05 (Responsive Design + Mobile Layouts). 🔥
