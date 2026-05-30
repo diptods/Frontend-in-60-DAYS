@@ -230,130 +230,44 @@ Outline
     3. outline-width: medium|thin|thick|length|initial|inherit;
     4. outline-offset 
     5. outline
-    
 
-Hour 3 — Project
-🎯 Project:
 
-Student Registration Form Website V2
 
-Use yesterday's project.
+🎯 Project: Student Registration Form Website V2
+{Use yesterday's project.}---project 02
 
 Step 1
-
 Create:
+    index.html
+    style.css
 
-index.html
-style.css
 Step 2
-
 Connect CSS
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-Step 3
+Step 3  : Style Body
 
-Style Body
+Step 4  : Style Header
 
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-Step 4
+Step 5  : Style Navigation
 
-Style Header
+Step 6  : Style Forms
 
-header{
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-Step 5
+Step 7  : Style Buttons
 
-Style Navigation
+Step 8  : Style Footer
 
-nav{
-    text-align: center;
-    margin: 20px;
-}
-Step 6
 
-Style Forms
 
-form{
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-Step 7
-
-Style Buttons
-
-button{
-    padding: 10px 20px;
-}
-Step 8
-
-Style Footer
-
-footer{
-    text-align:center;
-    background-color:black;
-    color:white;
-    padding:20px;
-}
-Hour 4 — Practice Challenge
+###  Practice Challenge  ###
 
 Without tutorial help:
+    1. Create a new page:
+    2. Contact Page
 
-Create a new page:
+Include:  {Name, Email, Message, Submit Button}
+Apply CSS:  {Background color, Border, Padding, Margin, Font styling}
 
-Contact Page
-
-Include:
-
-Name
-Email
-Message
-Submit Button
-
-Apply CSS:
-
-Background color
-Border
-Padding
-Margin
-Font styling
-🧠 Today's Important Concepts
-CSS Selector
-h1{
-    color:red;
-}
-
-Targets all h1 tags.
-
-Class Selector
-
-HTML:
-
-<div class="box">
-
-CSS:
-
-.box{
-    background-color:white;
-}
-ID Selector
-
-HTML:
-
-<div id="header">
-
-CSS:
-
-#header{
-    background-color:blue;
-}
 
 ❌ Don't Learn Today
 Flexbox
