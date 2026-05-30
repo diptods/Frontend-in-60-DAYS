@@ -131,3 +131,10 @@ nav a:hover {
     background-color: #dd1919;
     border: 1px solid #dd4141;
 }
+
+footer{
+    text-align:center;
+    background-color:black;
+    color:white;
+    padding:20px;
+}
