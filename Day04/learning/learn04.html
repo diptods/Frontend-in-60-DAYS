@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 04 Of Frontend Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DAY 04 — CSS Layout Mastery (Flexbox)</h1>
+    <div>
+        <p>This is for display without flexbox</p>
+        <div class="no-container">
+            <p class="box">Box 1</p>
+            <p class="box">Box 2</p>
+            <p class="box">Box 3</p>
+        </div>
+        
+        <p>This is for display with flexbox</p>
+        <div class="container1">
+            <p class="box1">Box 1</p>
+            <p class="box1">Box 2</p>
+            <p class="box1">Box 3</p>
+        </div>
+    </div>
+  <span style="display:block; background-color:aqua;">this is a inline content and we will make it block</span>
+  <span style="background-color: rgb(53, 226, 105);">This is the next inline(span) but it work like block level element</span>
+    <div>
+        <div style="display:inline; background-color:rgb(6, 76, 168);">this is a block content and we will make it inline</div>
+          <span style="background-color: rgb(234, 32, 217);">This is the next inline(span) but it work like inline level element</span>
+
+    </div>
+     
+    <div style="display: flex; gap: 2px; flex-direction: row; flex-wrap: wrap;"> <!--flex-direction: row|row-reverse|column|column-reverse|initial|inherit; -->
+        <p class="box-x">Box 1</p>
+        <p class="box-x">Box 2</p>
+        <p class="box-x">Box 3</p>
+        <p class="box-x">Box 4</p>
+        <p class="box-x">Box 5</p>
+        <p class="box-x">Box 6</p>
+    </div>
+
+    <h1>The flex-grow Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;"></div>
+  <div style="background-color:lightblue;"></div>
+  <div style="background-color:khaki;"></div>
+  <div style="background-color:pink;"></div>
+  <div style="background-color:lightgrey;"></div>
+</div>
+
+<div style="display: flex; gap: 3px; align-items:center; justify-content: space-around;">
+    <p>Item01</p>
+    <p>Item02</p>
+    <p>Item03</p>
+    <p>Item04</p>
+</div>
+
+</body>
+</html>

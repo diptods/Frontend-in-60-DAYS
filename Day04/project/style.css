@@ -1,0 +1,17 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    font-size: 18px;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    background-color: mediumslateblue;
+}
+.navbar a{
+    text-decoration: none;
+}
+
+.hero{
+    background-color: white;
+    
+}
