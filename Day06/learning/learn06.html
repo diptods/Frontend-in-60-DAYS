@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Properties of CSS</title>
+    <style>
+        .container{
+            display: grid;
+        }
+        .element{
+            height: 26px;
+            width: auto;
+            color: blue;
+            background-color: rgb(39, 189, 31);
+            border: 1px solid rgb(0, 10, 0);
+            margin: 3px;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 1px 1px;
+        }
+
+        .container1{
+            display: inline-grid;
+            row-gap: 20px;
+            
+        }
+        .element1{
+            height: 26px;
+            width: auto;
+            color: blue;
+            background-color: rgb(216, 216, 35);
+            border: 1px solid rgb(0, 10, 0);
+            margin: 3px;
+            padding: 5px;
+            text-align: center;
+            box-shadow: 1px 1px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        #myDIV {
+            height:300px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            display: grid;
+            gap: 10px;
+            background-color: #4bf321;
+            padding: 10px;
+        }
+        #myDIV div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+             gap: 30px 100px;
+        }
+        .item3 {grid-column: auto / span 2;}
+        .item4{
+            grid-column: auto / span 3;
+           
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            background-color: dodgerblue;
+            padding: 5px;
+            gap: 5px;
+            justify-content: space-around;
+        }
+
+        .container2 div {
+            background-color: #f1f1f1;
+            color:#000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container3 {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            background-color: dodgerblue;
+            padding: 5px;
+            gap: 5px;
+            justify-content: space-between;
+        }
+
+        .container3 div {
+            background-color: #f1f1f1;
+            color:#000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container4 {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            background-color: dodgerblue;
+            padding: 5px;
+            gap: 5px;
+            justify-content: space-evenly;
+        }
+
+        .container4 div {
+            background-color: #f1f1f1;
+            color:#000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container5 {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            background-color: dodgerblue;
+            padding: 5px;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .container5 div {
+            background-color: #f1f1f1;
+            color:#000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container6 {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            background-color: dodgerblue;
+            padding: 5px;
+            gap: 5px;
+            justify-content: start;
+        }
+
+        .container6 div {
+            background-color: #f1f1f1;
+            color:#000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .container7 {
+            display: grid;
+            grid-template-columns: 70px 70px 70px;
+            background-color: dodgerblue;
+            padding: 5px;
+            gap: 5px;
+            justify-content: end;
+        }
+
+        .container7 div {
+            background-color: #f1f1f1;
+            color:#000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .grid-container1 {
+            display: grid;
+            /* Creates a fixed 4-column layout */
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .grid-item {
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+            /* Method 1: Using explicit line numbers */
+        .special-item-a {
+            background-color: #e74c3c; /* Red to stand out */
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+            /* Method 2: Using shorthand with span */
+        .special-item-b {
+            background-color: #2ecc71; /* Green to stand out */
+            grid-column: 1 / span 2;
+        }
+
+        #main-web{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            
+        }
+        .part{
+            background-color: #3498db;
+            color: white;
+            padding: 30px;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: normal;
+            text-align: center;
+            
+            border: 1px solid black;
+        }
+
+        .part1{
+            background-color: #2ecc71;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        .menu{
+            background-color: #2e6dcc;
+ 
+           
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align: center;">The given display value is set as grid</p>
+    <div class="container">
+        <div class="element">1</div>
+        <div class="element">2</div>
+        <div class="element">3</div>
+        <div class="element">4</div>
+        <div class="element">5</div>
+    </div>
+    <p style="text-align: center;">The given display value is inline-grid</p>
+    <div class="container1">
+        <div class="element1">1</div>
+        <div class="element1">2</div>
+        <div class="element1">3</div>
+        <div class="element1">4</div>
+        <div class="element1">5</div>
+    </div>
+    <p>The grid-template-columns Property</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+
+    <p>The grid-auto-flow property</p>
+    <div id="myDIV">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+    </div>
+        
+    <p style="text-align: center;">justify-content: space-around;</p>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+
+    <p style="text-align: center;">justify-content: space-between;</p>
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+
+    <p style="text-align: center;">justify-content: space-evenly;</p>
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+
+    <p style="text-align: center;">justify-content: center;</p>
+    <div class="container5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+
+    <p style="text-align: center;">justify-content: start;</p>
+    <div class="container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+
+    <p style="text-align: center;">justify-content: end;</p>
+    <div class="container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+    </div>
+
+    <p style="text-align: center;">Combine grid-column and grid-row</p>
+    <div class="grid-container1">
+        <!-- Uses longhand start/end -->
+        <div class="grid-item special-item-a">1</div> 
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <!-- Uses shorthand span syntax -->
+        <div class="grid-item special-item-b">5</div> 
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+    </div>
+
+
+    <p style="text-align: center;">Website Structure with grid system</p>
+    <div id="main-web">
+        <div class="part part1">Header</div>
+        <div class="part">Navbar1</div>
+        <div class="part">Navbar2</div>
+        <div class="part">Navbar3</div>
+        <div class="part">Navbar4</div>
+        <div class="part">Navbar5</div>
+        <div class="part menu">Menu</div>
+        <div class="part">Main</div>
+        <div class="part">Content</div>
+        <div class="part">Article</div>
+        <div class="part">Footer</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Structure With Grid</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto auto auto auto auto;
+            gap: 0px;
+            /* background-color: #111; */
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .container>* {
+            padding: 10px 0;
+        }
+
+        
+        .header {
+            grid-column: 1 / span 5;
+            background-color: #63cb19;
+            padding: 20px 0;
+        }
+
+        
+        .nav01 {
+            background-color: #1f77b4;
+        }
+
+        .nav02 {
+            background-color: #2483c5;
+        }
+
+        .nav03 {
+            background-color: #298fd7;
+        }
+
+        .nav04 {
+            background-color: #2e9be8;
+        }
+
+        .nav05 {
+            background-color: #33a8fa;
+        }
+
+
+        .menu {
+            grid-column: 1 / 2;
+            grid-row: 3 / span 2;
+            background-color: #1a364a;
+            min-height: 400px;
+        }
+    
+        .article01 {
+            grid-column: 2 / span 3;
+            grid-row: 3 / 4;
+            background-image: linear-gradient(#e67e22, #db5e77);
+            background-color: #e67e22;
+     
+        }
+
+
+        .article02 {
+            grid-column: 2 / span 3;
+            grid-row: 4 / 5;
+            background-color: #7d5ebe;
+        }
+
+        .aside {
+            grid-column: 5 / 6;
+            grid-row: 3 / span 2;
+            background-color: #00d2d3;
+        }
+
+        .footer {
+            grid-column: 1 / span 5;
+            background-color: #2d3436;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+
+        <nav class="nav-item nav01">Nav01</nav>
+        <nav class="nav-item nav02">Nav02</nav>
+        <nav class="nav-item nav03">Nav03</nav>
+        <nav class="nav-item nav04">Nav04</nav>
+        <nav class="nav-item nav05">Nav05</nav>
+
+        <aside class="menu">Menu</aside>
+        <main class="article01">Article01</main>
+        <main class="article02">Article02</main>
+        <aside class="aside">Aside</aside>
+
+        <footer class="footer">Footer</footer>
+    </div>
+
+</body>
+
+</html>

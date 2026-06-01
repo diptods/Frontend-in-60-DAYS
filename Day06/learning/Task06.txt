@@ -1,0 +1,32 @@
+# 🚀 Day 06 - CSS Grid Layout
+
+Learn : Responsive Web Design with Grid 
+Project : Modern Product Showcase Website
+TimeSpend : 
+    8.00PM - 11.00PM 
+
+Learn:
+    1. CSS Grid
+    2. Grid Container
+    3. Grid Items
+    4. Rows and Columns
+    5. Grid Gap
+    6. Repeat Function
+    7. Fraction Units (fr)
+    8. Responsive Grid Layouts
+
+###  Understanding CSS Grid  ### 
+Grid Container
+    grid: none|grid-template-rows / grid-template-columns|grid-template-areas|grid-template-rows / [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows / grid-template-columns|initial|inherit;
+    grid-template-rows: none|auto|max-content|min-content|minmax()|length|percentage|fit-content()|repeat()|subgrid|
+    grid-template-columns: none|auto|max-content|min-content|minmax()|length|percentage|fit-content()|repeat()|subgrid|initial|inherit;
+    grid-template-areas: none|itemnames;
+    grid-auto-columns: auto|max-content|min-content|minmax()|fit-content()|length|%|initial|inherit;
+    grid-auto-flow: row|column|dense|row dense|column dense;
+
+
+    {Note number of auto in grid-template-columns represents the number of column}
+     
+     unit 1fr = 1 fraction
+
+### Project : Modern Product Showcase Website ### 
