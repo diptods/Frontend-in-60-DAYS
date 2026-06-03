@@ -1,0 +1,266 @@
+# 🚀 Day 07 -  HTML + CSS Master Project Day
+
+Learn : Revision of: {HTML Structure, Semantic HTML, Forms, CSS Basics, Flexbox, Responsive Design, CSS Grid}
+Project : 
+TimeSpend : 
+    8.00PM - 11.00PM 
+
+Que: Why Revision Day?
+Ans:
+    Helps retain information.
+    Finds weak areas.
+    Improves coding speed.
+    Builds confidence.
+    Prepares for larger projects.
+    Prevents tutorial dependency.
+
+Topics To Revise
+    HTML
+    Headings
+    Paragraphs
+    Lists
+    Images
+    Links
+    Tables
+    Forms
+    Semantic Tags
+    CSS
+    Colors
+    Background Color
+    Font Family
+    Font Size
+    Border
+    Border Radius
+    Margin
+    Padding
+    Flexbox
+
+display:flex;
+
+Important Properties:
+    justify-content
+    align-items
+    flex-direction
+    gap
+    flex-wrap
+    Responsive Design
+
+@media (max-width:768px)
+
+Purpose:
+    Mobile Friendly Layout
+    Tablet Friendly Layout
+    Better User Experience
+    CSS Grid
+display:grid;
+
+Important Properties:
+    grid-template-columns
+    grid-template-rows
+    gap
+    repeat()
+    auto-fit
+    minmax()
+
+PROJECT : ChocoBite Chocolate Landing Page
+Project Name
+Project Description
+
+Build a complete chocolate product website landing page using:
+    [HTML, CSS, Flexbox, CSS Grid, Responsive Design]
+
+
+Website Structure
+
+Header
+
+    Logo
+    Navigation Menu
+
+Links:
+
+    Home | Products | About | Contact
+
+Use Flexbox
+
+Hero Section
+
+    Main Heading
+    Description
+    Shop Now Button
+    Hero Image
+
+Example:
+
+    Premium Handmade Chocolate
+    Experience luxury in every bite.
+
+[ Shop Now ]
+
+Use Flexbox
+
+Features Section
+
+Create 3 Cards:
+    Premium Ingredients
+    Handmade Quality
+    Fast Delivery
+
+Desktop:
+
+Feature | Feature | Feature
+
+Mobile:
+    Feature
+    Feature
+    Feature
+
+Use Grid
+
+Product Section
+
+Create 6 Product Cards
+
+Each Card Contains:
+
+    Product Image
+    Product Name
+    Product Price
+    Product Description
+    Buy Button
+
+Example:
+
+    Chocolate Box
+    $20
+    Premium Dark Chocolate
+    [ Buy Now ]
+
+Desktop:
+    Card Card Card
+    Card Card Card
+
+Tablet:
+    Card Card
+    Card Card
+
+Mobile:
+    Card
+    Card
+    Card
+
+Use CSS Grid
+
+Testimonials Section
+
+Create 3 Reviews
+
+Example:
+
+    ⭐⭐⭐⭐⭐
+    Amazing Chocolate
+    - Customer Name
+
+Use Grid
+
+Newsletter Section
+
+Contains:
+
+    Email Input
+    Subscribe Button
+    Footer
+
+Contains:
+
+    © 2026 ChocoBite
+
+    All Rights Reserved
+    Styling Requirements
+    Colors
+
+Use:
+
+    Chocolate Brown
+    Dark Brown
+    Cream
+    White
+    Typography
+    font-family: Arial, sans-serif;
+
+or
+
+    font-family: Poppins, sans-serif;
+    Hover Effects
+
+Example:
+
+    .card:hover{
+        transform: translateY(-5px);
+    }
+Button Hover
+
+Example:
+
+    button:hover{
+        opacity:0.9;
+    }
+Responsive Requirements
+
+Desktop:
+    3 Product Cards Per Row
+
+Tablet:
+    2 Product Cards Per Row
+
+Mobile:
+    1 Product Card Per Row
+    Practice Challenges
+Challenge 01
+    Build Contact Page
+
+Include:
+    Name
+    Email
+    Message
+    Submit Button
+
+Challenge 02
+    Build About Page
+Include:
+    Company Story
+    Mission
+    Vision
+
+Challenge 03
+    Build Product Details Card
+Include:
+    Large Product Image
+    Product Name
+    Product Price
+    Description
+    Buy Button
+Project Folder Structure
+project/
+
+├── index.html
+├── style.css
+
+├── images/
+│   ├── chocolate1.jpg
+│   ├── chocolate2.jpg
+│   └── chocolate3.jpg
+
+└── README.md
+Outcomes
+
+✅ I revised HTML
+✅ I revised CSS
+✅ I revised Flexbox
+✅ I revised Responsive Design
+✅ I revised CSS Grid
+✅ I built a complete landing page
+✅ I used Flexbox properly
+✅ I used CSS Grid properly
+✅ I made the website responsive
+✅ I can explain every section of my project
