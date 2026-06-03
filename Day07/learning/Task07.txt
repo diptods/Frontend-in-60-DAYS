@@ -1,4 +1,4 @@
-# 🚀 Day 07 -  HTML + CSS Master Project Day
+ 🚀 Day 07 -  HTML + CSS Master Project Day
 
 Learn : Revision of: {HTML Structure, Semantic HTML, Forms, CSS Basics, Flexbox, Responsive Design, CSS Grid}
 Project : 
