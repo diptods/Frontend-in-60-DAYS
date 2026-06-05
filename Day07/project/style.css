@@ -1,0 +1,503 @@
+/* For the root directory design */
+@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+:root{
+    --primary: #6f4e37;
+    --secondary: #d4a373;
+    --accent: #ffd700;
+    --dark: #1a1a1a;
+    --light: #fff8f0;
+    --card: #2a2a2a;
+    --honeygold: #e5b869;
+    --metalicgold: #c5a880;
+    --classicgold: #ffd700;
+    --deepgold: #b38f54;
+    --choco01: #6f3726;
+    --choco02: #59260b;
+    --choco03: #371a15;
+    --choco04: #231611;
+    --gold01: #e5b869;
+    --choco05: #0b0604;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.luxury-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto; 
+  gap: 15px; 
+}
+
+
+.divider-line {
+  flex: 1; 
+  height: 1.5px; 
+  background-color: #e5b869; 
+  border-radius: 2px;
+}
+
+
+.divider-diamond {
+  width: 10px;
+  height: 10px;
+  background-color: #e5b869;
+  transform: rotate(45deg); 
+  flex-shrink: 0; 
+  box-shadow: 0 0 6px rgba(229, 184, 105, 0.3);
+}
+
+/* For the navbar part */
+nav{
+    margin-top: 0rem;
+    padding: 0rem;
+    background-color: var(--dark);
+    height: 50px;
+}
+#navbar-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+     box-sizing: border-box;
+    gap: 2vw;
+}
+#logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 15vh;
+    width: 15vw;
+    font-size: 15vh;
+    size: 25px;
+}
+#logo img{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5vh;
+    width: 5vw;
+    font-size: 10vh;
+    size: 8px;
+    background-color: black;
+    margin-left: auto;
+    margin-top: 0.5vh;
+}
+#navbar-sites{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6vw;
+    margin-top: -10vh;
+    margin-left: 8vw;
+    display: flex;
+    margin-right: 40px; 
+}
+#navbar-sites a{
+    text-decoration: none;
+    align-items: center;
+    margin-top: 1vh;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--light);
+}
+#navbar-sites a:nth-child(1){
+    color: var(--accent);
+    border: none;
+    border-bottom: 1px solid var(--accent);
+}
+#navbar-sites a:hover{
+    color: #ffd700;
+    border: none;
+    border-bottom: 1px solid var(--accent);
+}
+#navbar-last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3vw;
+    margin-top: -8vh;
+    color: var(--light);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.cart-badge-wrapper {
+    position: relative; 
+    display: inline-block;
+}
+
+.plus-badge {
+    color: var(--light);
+    background-color: var(--accent);
+    border: 0.5px solid var(--light);
+    margin: 0px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-last i:hover{
+    color: var(--accent);
+}
+
+/*-- For Hero Section --*/
+#hero-section{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 2%, rgba(0, 0, 0, 0.3) 8%), 
+                      url('https://www.shutterstock.com/image-photo/glass-mug-hot-chocolate-ingredients-600nw-2608209821.jpg');
+    min-height: 95vh; 
+    width: 100%;
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid var(--metalicgold);
+    border-width: 50%;
+}   
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 8%;
+    height: 100%;
+}
+.hero-title{
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vh; 
+    color: var(--accent);
+    margin: 0 0 1vh 0;
+}
+.hero-subtitle{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 7.5vh; 
+    color: var(--light);
+    line-height: 1.2; 
+    margin: 0 0 2.5vh 0;
+}
+.hero-description{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.2vh;
+    color: #fff8f0;
+    line-height: 1.6;
+    margin: 0 0 4vh 0;
+    max-width: 500px;
+
+}
+
+.hero-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: auto;
+    
+}
+.hero-shop button{
+    border: 1px solid var(--dark);
+    border-radius: 5px 5px;
+    height: 5vh;
+    width: 9vw;
+    color: var(--dark);
+    background-color: var(--classicgold);
+    padding: 3px;
+    margin: 2px;
+    font-weight: 700;
+}
+.hero-shop button:hover{
+    border: 1px solid var(--classicgold);
+    border-radius: 2px 2px;
+    height: 5vh;
+    width: 9vw;
+    color: var(--classicgold);
+    background-color: var(--dark);
+    padding: 3px;
+    margin: 2px;
+    box-shadow: 3px 3px var(--honeygold);
+    font-weight: 900;
+}
+.hero-explore button{
+    border: 0.5px solid var(--classicgold);
+    border-radius: 5px 5px;
+    height: 5vh;
+    width: 10vw;
+    color: var(--classicgold);
+    background-color: var(--dark);
+    padding: 3px;
+    margin: 2px;
+    font-weight: 700;
+}
+.hero-explore button:hover{
+    border: 1px solid var(--classicgold);
+    border-radius: 2px 2px;
+    height: 5vh;
+    width: 10vw;
+    color: var();
+    background-color: var(--dark);
+    padding: 3px;
+    margin: 2px;
+    box-shadow: 3px 3px var(--honeygold);
+    font-weight: 900;
+}
+
+/* -- For featured collections --*/
+.feature-sec{
+    min-height: 55vh; 
+    width: 84%;
+    justify-content: center;
+    padding: 2% 8%;
+    background-color: var(--choco04);
+}
+.feature-title{
+    align-items: center;
+    justify-content: center;
+    color: var(--honeygold);
+    text-align: center;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4.7vh; 
+    margin: 0 0 0vh 0;
+}
+.feature-subtitle{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.90vh; 
+    color: var(--light);
+    line-height: 1.0; 
+    margin: 0 0 2.5vh 0;
+}
+.feature-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vw;
+}
+.feature-itembox{
+    height: 43vh;
+    width: 30%;
+    border: 1px solid var(--accent);
+    color: var(--honeygold);
+    background-color: var(--choco02);
+}
+.feature-itembox img{
+    image-resolution: 300dpi;
+    height: 30vh;
+    width: 100%;
+}
+.feature-role{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-around;
+}
+.feature-para1{
+    padding-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: 500;
+    color: var(--light);
+}
+.feature-para2{
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: var(--deepgold);
+}
+.feature-price{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: bold;
+    color: var(--light);
+    margin-top: 8px;
+}
+.feature-cart i{
+    margin-top: 2vh;
+    border: 1px solid var(--accent);
+    padding: 6px;
+    border-radius: 50%;
+    text-align: center;
+}
+.feature-cart i:hover{
+    color: var(--choco03);
+    background-color: var(--accent);
+    margin-top: 2vh;
+    border: 1px solid var(--choco03);
+    padding: 6px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* For CTA Banner */
+
+.benefits-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--choco05); 
+  max-width: 1300px;
+  padding: 50px 40px;
+  /*  margin: 50px auto;
+  border-radius: 16px; */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.benefit-cta-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 25px;
+}
+
+.cta-script-title {
+  font-family: 'Alex Brush', cursive;
+  font-size: 26px;
+  color: #e5b869; 
+  margin: 0;
+  line-height: 1;
+}
+
+.cta-brand-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 4px 0 12px 0;
+}
+
+.cta-description {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #bfaea7; 
+  margin: 0 0 20px 0;
+}
+
+
+.cta-btn-learn {
+  background: linear-gradient(135deg, #e5b869 0%, #c49646 100%);
+  color: #0b0604;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cta-btn-learn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(229, 184, 105, 0.2);
+}
+
+.cta-btn-learn .arrow {
+  transition: transform 0.2s ease;
+}
+
+.cta-btn-learn:hover .arrow {
+  transform: translateX(3px);
+}
+
+.benefit-feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 15px;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.benefit-feature-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(229, 184, 105, 0.2) 20%, rgba(229, 184, 105, 0.2) 80%, transparent);
+}
+
+.feature-icon-box {
+  color: #e5b869;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.feature-heading {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  letter-spacing: 0.3px;
+}
+
+.feature-subtext {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #a8968e;
+  margin: 0;
+}
+
+/* For best selling section */
+.best-selling-container{
+    background-color: var(--choco03);
+    color: var(--accent);
+    height: 25vh;
+    width: auto;
+
+}
+.best-selling-subtitle{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4.90vh; 
+    color: var(--light);
+    margin-bottom: 0;
+    padding-top: 25px;
+}
