@@ -13,7 +13,26 @@ Project Goal
 You will practice:
    [Tailwind Utility Classes, Flexbox, Grid, Responsive Design, Hover Effects, Shadows, Spacing, Typography] 
     
-    
+How to install Tailwind CSS?
+CDN :  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+Setup :
+    📁 Step 1: Open Your Target Project Folder
+            cd C:\Users\User\Desktop\work\Frontend_Challenge\Day08
+    📄 Step 2: Initialize Your Package Config File
+            npm init -y
+    📦 Step 3: Execute the Local Installation
+            npm install tailwindcss @tailwindcss/postcss postcss
+
+                or
+
+            npm install -D @tailwindcss/cli
+    🎨 Step 4: Link Tailwind to Your Source Stylesheet
+            @import "tailwindcss";
+    🚀 Step 5: Start the Compiler Watch Process
+            npx tailwindcss -i ./style.css -o ./dist/output.css --watch
+
+
 Website Name : GameVerse 2026
 Target Audience
     [Gamers, Esports Teams, Tournament Organizers, Sponsors, Total Pages]
@@ -117,120 +136,103 @@ Section 06 - Teams Section
 Title: Participating Teams
 
 Create 6 Team Cards
-
 Each Card Contains:
 
-Team Logo
-
-Placeholder Image
-
-Team Name
+    Team Logo
+    Placeholder Image
+    Team Name
 
 Example:
 
-Shadow Wolves
-Captain
+    Shadow Wolves{Captain}
+    Captain: Alex
+    Region : Dhaka
 
-Example:
 
-Captain: Alex
-Region
-
-Example:
-
-Dhaka
 Layout
 
 Desktop:
-
-3 Cards Per Row
-
+    3 Cards Per Row
 Mobile:
+    1 Card Per Row
 
-1 Card Per Row
 Section 07 - Statistics Section
 Create 4 Stat Cards
-Card 01
-500+
+    Card 01
+        500+
+        Players
+    Card 02
+        120
+        Teams
+    Card 03
+        4
+        Games
+    Card 04
+        ৳80,000
+        Prize Pool
 
-Players
-Card 02
-120
-
-Teams
-Card 03
-4
-
-Games
-Card 04
-৳80,000
-
-Prize Pool
 Section 08 - Registration Form
 Fields
-Full Name
-<input type="text">
-Email
-<input type="email">
-Team Name
-<input type="text">
-Game Selection
-<select>
+        Full Name
+        <input type="text">
+        Email
+        <input type="email">
+        Team Name
+        <input type="text">
+        Game Selection
+        <select>
 
 Options:
+        PUBG Mobile
+        Valorant
+        Free Fire
+        CS2
+        Submit Button
+        Register Team
 
-PUBG Mobile
-Valorant
-Free Fire
-CS2
-Submit Button
-Register Team
 Section 09 - Sponsors
-Title
-Our Sponsors
+    Title
+    Our Sponsors
 Create 4 Sponsor Cards
 
 Examples:
 
-HyperX
+    HyperX
+    Red Bull
+    NVIDIA
+    ASUS ROG
 
-Red Bull
-
-NVIDIA
-
-ASUS ROG
 Section 10 - Footer
-Content
-Website Name
-GameVerse
-Quick Links
-Home
-Games
-Schedule
-Contact
-Social Links
-Facebook
-Instagram
-YouTube
-Discord
-Copyright
-© 2026 GameVerse. All Rights Reserved.
+    Content
+        Website Name
+        GameVerse
+    Quick Links
+        Home
+        Games
+        Schedule
+        Contact
+        Social Links
+        Facebook
+        Instagram
+        YouTube
+        Discord
+    Copyright
+        © 2026 GameVerse. All Rights Reserved.
+
 Design Requirements
 Colors
-Dark Background
-
-Purple Accent
-
-Blue Accent
+    Dark Background
+        Purple Accent
+        Blue Accent
 
 White Text
-
-Example:
 
 #0F172A
 #7C3AED
 #3B82F6
 #FFFFFF
+
+
 Tailwind Features You MUST Use
 flex
 grid
@@ -245,17 +247,10 @@ lg:
 Success Criteria
 
 ✅ Responsive Website
-
 ✅ Tailwind Used Everywhere
-
 ✅ Minimum 10 Sections
-
 ✅ Modern Gaming Theme
-
 ✅ Professional Layout
-
 ✅ Clean Spacing
-
 ✅ Hover Effects
-
 ✅ Mobile Friendly

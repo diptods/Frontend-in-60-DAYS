@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Scan all HTML files in the immediate local folder */
+@source "./*.html";
