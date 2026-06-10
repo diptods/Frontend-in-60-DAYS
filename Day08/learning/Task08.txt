@@ -32,6 +32,39 @@ Setup :
     🚀 Step 5: Start the Compiler Watch Process
             npx tailwindcss -i ./style.css -o ./dist/output.css --watch
 
+Best Setup : (Using Vite)
+    Step 01: Create your project
+        npm create vite@latest my-project
+        cd my-project
+    Step 02: Install Tailwind CSS
+        npm install tailwindcss @tailwindcss/vite
+    Step 03: Configure the Vite plugin
+        import { defineConfig } from 'vite'
+        import tailwindcss from '@tailwindcss/vite'
+
+            export default defineConfig({
+                plugins: [
+                    tailwindcss(),
+                ],
+            })
+    Step 04: Import Tailwind CSS
+        @import "tailwindcss";
+    Step 05: Start your build process
+        npm run dev
+    Step 06: Start using Tailwind in your HTML
+        <!doctype html>
+        <html>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link href="/src/style.css" rel="stylesheet">
+            </head>
+            <body>
+                <h1 class="text-3xl font-bold underline">
+                    Hello world!
+                </h1>
+            </body>
+        </html>
 
 Website Name : GameVerse 2026
 Target Audience
