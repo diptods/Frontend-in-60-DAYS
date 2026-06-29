@@ -1,0 +1,130 @@
+Topic : Tailwind Layout & Components 
+Project : Modern Gym Website 
+
+
+1. Tailwind CSS Container:
+    The container class sets responsive fixed widths at different breakpoints, ensuring the content adapts to various screen sizes. 
+    To center the container, we use mx-auto utility class. It adjust the margin of the container automatically so that the container appears to be in center. 
+2. Tailwind CSS Box Sizing: Box sizing in CSS controls how a browser calculates a web element's total width and height. Tailwind CSS gives you two straightforward utility classes to manage this behavior instantly.
+    it mainly known as  box-sizing in CSS , But Tailwind CSS is utility-first so it uses two class (i) box-content  & (ii) box-border 
+
+        box-border(Default) :   width(Total Width Formula) ---- Padding and border shrink the inner content area.
+        box-content         :   width + padding + border   ---- Padding and border push the element outward, making it bigger.
+
+3. Tailwind CSS Display :
+    Display classes in Tailwind CSS control how elements behave in the layout flow and how they occupy space on the screen. They directly map to the standard CSS display property.
+        block : Takes up the full width of its parent container.Starts on a new line.Respects top and bottom margins and paddings.
+        inline-block : Takes up only the width of its content.Sits next to other elements on the same line.Respects top and bottom margins, paddings, width, and height.
+        inline : Sits inline with text and content.Ignores width, height, and top/bottom margins.
+        hidden : Completely removes the element from the page layout.It takes up zero space, making it perfect for toggling menus.
+        flex : Turns the element into a Flexbox container.Aligns its direct child elements in rows or columns instantly.
+        grid : Turns the element into a CSS Grid container.Perfect for building precise rows and columns.
+
+4. Tailwind CSS Float: 
+    Float classes in Tailwind CSS control how elements shift to the left or right, allowing text to wrap naturally around them. While modern web layouts mostly use Flexbox and Grid, floats are still the best tool for simple text-wrapping tasks.
+        float-left : Pushes the element to the far left side of its parent box.Text and inline items wrap around its right side.
+        float-right : Pushes the element to the far right side of its parent box.Text and inline items wrap around its left side.
+        float-none : Resets the element to its default placement in the layout flow.Text will not wrap around it.
+
+
+5. Tailwind CSS Clear:
+        clear-both: Ensures an element drops down below both left and right floated items.
+        clear-left: Drops down below left floated items.
+        clear-right: Drops down below right floated items.
+        clearfix :  Automatically stretches the container to fit the floated items, preventing layout breakage.
+
+6. Tailwind CSS Object Fit:
+    Object fit classes in Tailwind CSS control how an image or video stretches, crops, or resizes to fit inside its container. They act like a smart cropping tool for media elements.
+    Object fit Classes Are (i)object-contain ,(ii)object-cover ,(iii)object-fill ,(iv)object-none & (v)object-scale-down
+        object-contain: Scales the image so the entire picture is visible inside the container.Behavior: It prevents cropping, which often leaves empty black or white bars on the sides (letterboxing).
+        object-cover: Scales the image to completely fill the container.Behavior: It crops the sides or top/bottom so the image stays perfectly proportioned without squishing.
+        object-fill: Stretches or squishes the image to match the container's exact dimensions.Behavior: This will distort your image if the aspect ratios don't match.
+        object-none: Ignores the container size completely and displays the image at its original, raw size.Behavior: It crops out anything that doesn't fit.
+        object-scale-down: Compares the image size to the container size.Behavior: It acts like object-none or object-contain, whichever results in a smaller image.
+
+7. Tailwind CSS Object Position:
+    Object position classes in Tailwind CSS control the alignment of an image or video inside its container. They work hand-in-hand with object-cover or object-contain to let you choose exactly which part of a cropped photo remains visible.
+        object-center : Centers the image perfectly both horizontally and vertically.
+        object-top    : Aligns the image to the top edge of the container. Perfect for portraits so heads don't get cropped out.
+        object-bottom : Aligns the image to the bottom edge of the container.
+        object-left   : Aligns the image to the left edge.
+        object-right  : Aligns the image to the right edge.
+
+        Corner Alignments:
+            object-top-left / object-top-right object-bottom-left / object-bottom-right
+
+            The Banner Fix (object-top) | Custom Arbitrary Positions (object-[20%_80%]) | Responsive Camera Focus (w-full h-48 object-cover object-center lg:object-right)
+                    object-left-top   | object-left   | object-left-bottom
+                    object-top        | object-center | object-bottom
+                    object-right-top  | object-right  | object-right-bottom
+
+8. Tailwind CSS Overflow: 
+    Overflow classes in Tailwind CSS control what happens when an element's content is too large to fit inside its specified width or height. It determines whether the extra content is hidden, creates a scrollbar, or spills outside the box.
+        overflow-auto       : It automatically adds a scrollbar whenever it is required. This class adds scrollbars to an element in the event that its content overflows the boundary of that element.
+        overflow-hidden     : The overflow is clipped and the rest of the content is invisible. This class is used to clip any content within an element that overflows the bounds of that element.
+        overflow-visible    : The content is not clipped and visible outside the element box. This class used to prevent content within an element from being clipped.
+        overflow-scroll     : The overflow is clipped but a scrollbar is added to see the rest of the content. The scrollbar can be horizontal or vertical. This class is used when you need to show scrollbars, this utility will only be shown if scrolling is necessary.
+        overflow-x-auto     : This class specifies whether to add a scroll bar, clip the content, or display overflow content of a block-level element when it overflows at the left and right edges. The overflow-x-auto provides a scrolling mechanism for overflowing boxes.
+        overflow-y-auto     : This class specifies whether to add a scroll bar, clip the content, or display overflow content of a block-level element when it overflows at the top and bottom edges. The overflow-y-auto class provides a scrolling mechanism for overflowing boxes.
+        overflow-x-hidden   : It is used to clip the content and no scrolling mechanism is provided on the x-axis.
+        overflow-y-hidden   : It is used to clip the content and no scrolling mechanism is provided on the y-axis.
+        overflow-x-visible  : This class does not clip the content. The content may be rendered outside the left and right edges.
+        overflow-y-visible  : This class does not clip the content. The content may be rendered outside the left and right edges.
+        overflow-x-scroll   : It is used to clip the content and providing a scrolling mechanism.
+        overflow-y-scroll   : It is used to clip the content and also provides a scrolling mechanism.
+
+9. Tailwind CSS OverScroll :
+    This class accepts more than one value in tailwind CSS. It is the alternative to the CSS Overscroll-behavior property. This class is used to set the behavior of the browser when the boundary of a scrolling area is reached. This property can be used to prevent unwanted scrolling in pages where there are multiple scroll areas. 
+        overscroll-auto         : It is used to set the scrolling behavior to default. The whole page along with the element will scroll even if the boundary of the element is reached. It is the default value.
+        overscroll-contain      : It is used to set the scrolling behavior to default only on the element used. Scrolling the element further after it has reached the boundary will not scroll the elements behind it. No scroll-chaining would occur in the neighboring scrolling areas.
+        overscroll-none         : It is used to prevent scroll-chaining on all elements. The default scroll overflow behavior is also prevented.
+        overscroll-y-auto       : This is used to set the scrolling behavior on the y-axis to default on all the elements. The whole page will scroll even if the boundary of the element is reached. It is the default value.
+        overscroll-y-contain    : It is used to set the scrolling behavior on the y-axis to default only on the element used. No scroll-chaining would occur on the neighboring scrolling areas and the elements behind will not scroll.
+        overscroll-y-none       : It is used to prevent scroll-chaining on the y-axis on all elements. The default scroll overflow behavior is also prevented.
+        overscroll-x-auto       : It is used to set the scrolling behavior on the x-axis to default on all the elements. The whole page will scroll even if the boundary of the element is reached. It is the default value.
+        overscroll-x-contain    : It is used to set the scrolling behavior on the x-axis to default only on the element used. No scroll-chaining would occur on the neighboring scrolling areas and the elements behind will not scroll.
+        overscroll-x-none       : It is used to prevent scroll-chaining on the x-axis on all elements. The default scroll overflow behavior is also prevented.
+
+10.  Tailwind CSS Position : 
+    This class accepts more than one value in tailwind CSS. It is the alternative to the CSS Position property. This class is used for controlling how an element is positioned in the DOM.
+        static      : This class is used to set the position of an element according to the normal flow of the document.
+        fixed       : This class will be positioned fixed to the viewport. An element with fixed positioning allows it to remain at the same position even we scroll the page. We can set the position of the element using the top, right, bottom, left.
+        absolute    : This class is used to set the position of an element outside the normal flow of the document, causing neighboring elements to act as if the element doesn't exist.
+        relative    : This class is used to set the position of an element relative to the normal flow of the document.
+        sticky      : This class is used to set the position of an element as relative until it crosses a specified threshold, then it treats it as fixed until its parent is off-screen.
+
+11. Tailwind CSS Top/Left/Bottom/Right :
+    These classes accept many values in tailwind CSS in which all the properties are covered in class form. These are the alternative to the CSS Top/Right/Bottom/Left properties. These classes are used to control the alignment of a positioned element. Remember we can use these properties only with positioned elements.
+        .inset-0    : It is used to provide 0px value to top/right/bottom/left properties of element.
+        .inset-y-0  : It is used to provide value 0px to the top and bottom property of the element.
+        .inset-x-0  : It is used to provide value 0px to the right and left property of the element.
+        .top-0      : It is used to provide value 0px to the top property of the element.
+        .right-0    : It is used to provide value 0px to the right property of the element.
+        .bottom-0   : It is used to provide value 0px to the bottom property of the element.
+        .left-0     : It is used to provide value 0px to the left property of the element. 
+
+12. Tailwind CSS Visibility :
+    This class accepts two values in tailwind CSS. It is the alternative to the CSS visibility property. This class is used to specify whether an element is visible or not in a web document but the hidden elements take up space in the web document. Use the display property to remove or hide and delete an element from the browser.
+        invisible: This class is used to hide the element from the page but takes up space in the document.
+        visible: It is the default value. The element is shown or visible normally in the web document.
+
+13. Tailwind CSS Z-index  :
+    The tailwind CSS is a utility CSS framework that provides classes the manage our HTML content in the use of CSS. The tailwind CSS makes our designing part easier and responsive for multiple platforms. The z-Index utility is for controlling the stack order of an element. It is the alternative to the CSS z-index property.
+        z-0     : It is used to give the z-index 0 to the element. 
+        z-10    : It is used to give the z-index 10 to the element. The elements appear 10px upside along the z-axis.
+        z-20    : It is used to give the z-index 20 to the element. The elements appear 20px upside along the z-axis.
+        z-30    : It is used to give the z-index 30 to the element. The elements appear 30px upside along the z-axis.
+        z-40    : It is used to give the z-index 40 to the element. The elements appear 40px upside along the z-axis.
+        z-50    : It is used to give the z-index 50 to the element. The elements appear 50px upside along the z-axis.
+        z-auto  : It is used to give the z-index auto to the element. The elements appear auto upside along the z-axis.
+
+## Tailwind CSS Flexbox ##  Tailwind CSS allows you to create flexible and responsive layouts using Flexbox.
+
+14. Tailwind CSS Flex Direction : 
+    The CSS flexbox is a vital feature to develop the frontend, there are four directions available in CSS so in tailwind CSS all the properties are covered as in class form. It is the alternative of CSS flex-direction Property for fast development of front-end.
+        flex-row            : It arranges the row the same as the text direction. The default value of flex-direction is a row. It is used to specify that the item has a normal text direction. It makes the item follow the normal text direction in lines.
+        flex-row-reverse    : This class is used to follow the opposite text direction. It makes flex items in reverse order exactly the opposite of text direction as we can see in the Output.
+        flex-col            : It arranges the row as a column same as text direction but top to bottom. It is used to specify that the item has a normal top to bottom direction. It makes the item follow the normal top to bottom direction as we can see in the output.
+        flex-col-reverse    : It arranges the row as a column same as row-reverse bottom to top. It is used to specify that the item has a normal bottom to top direction. It makes the item follow the normal bottom to top direction as we can see in the output.
+
+15. Tailwind CSS Flex Wrap
