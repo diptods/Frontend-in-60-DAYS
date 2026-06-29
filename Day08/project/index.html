@@ -1,11 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 08 project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 08 project</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/tailwindcss">
+    @theme {
+        /* Custom brand colors matching the gold logo theme */
+        --color-gold-light: #f4e8c1;
+        --color-gold-base: #c5a880;
+        --color-gold-dark: #a3845b;
+        --color-charcoal: #121212;
+      }
+    </style>
 </head>
+
 <body>
+  <!-- 01. Navbar  -->
+  <section class="Navbar">
+    <nav class="border-b border-neutral-800 bg-charcoal/95 sticky top-0 z-50 backdrop-blur-md">
+      <div class="max-w-5xl mx-auto px-3 sm:px-3 lg:px-5">
+        <div class="flex items-center justify-between h-15">
+
+          <!-- Left: Logo & Brand Name -->
+          <div class="flex items-center gap-3 cursor-pointer">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full border border-gold-base/40 bg-neutral-900">
+              <span class="text-gold-base font-serif text-xl font-bold">O&V</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif text-xl tracking-widest text-gold-light uppercase font-bold">The Oak & Vine</span>
+              <span class="text-[10px] tracking-[0.2em] text-neutral-400 uppercase">Modern Kitchen & Wine Bar</span>
+            </div>
+          </div>
+
+          <!-- Center: Desktop Navigation Links -->
+          <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-widest uppercase">
+            <a href="#home" class="text-gold-base transition-colors duration-300">Home</a>
+            <a href="#menu" class="text-neutral-300 hover:text-gold-light transition-colors duration-300">Menu</a>
+            <a href="#story" class="text-neutral-300 hover:text-gold-light transition-colors duration-300">Our Story</a>
+            <a href="#gallery" class="text-neutral-300 hover:text-gold-light transition-colors duration-300">Gallery</a>
+            <a href="#contact" class="text-neutral-300 hover:text-gold-light transition-colors duration-300">Contact</a>
+          </div>
+
+          <!-- Right: Desktop Book a Table Button -->
+          <div class="hidden md:flex items-center">
+            <a href="#reservations"
+              class="border border-gold-base text-gold-base hover:bg-gold-base hover:text-charcoal px-6 py-2.5 text-xs font-semibold tracking-widest uppercase transition-all duration-300 rounded-sm">
+              Book a Table
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button (Hamburger) -->
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-btn" type="button"
+              class="text-neutral-400 hover:text-white focus:outline-none cursor-pointer" aria-label="Toggle Menu">
+              <!-- Menu Icon (Hamburger) -->
+              <svg id="menu-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+              <!-- Close Icon (X) - Hidden by default -->
+              <svg id="close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MOBILE DROPDOWN MENU (Hidden by default using the 'hidden' class) -->
+      <div id="mobile-dropdown"
+        class="hidden md:hidden border-t border-neutral-800 bg-charcoal px-4 pt-2 pb-6 space-y-3 text-center transition-all duration-300">
+        <a href="#home" class="block text-gold-base py-2 text-sm font-medium tracking-widest uppercase">Home</a>
+        <a href="#menu"
+          class="block text-neutral-300 hover:text-gold-light py-2 text-sm font-medium tracking-widest uppercase">Menu</a>
+        <a href="#story"
+          class="block text-neutral-300 hover:text-gold-light py-2 text-sm font-medium tracking-widest uppercase">Our
+          Story</a>
+        <a href="#gallery"
+          class="block text-neutral-300 hover:text-gold-light py-2 text-sm font-medium tracking-widest uppercase">Gallery</a>
+        <a href="#contact"
+          class="block text-neutral-300 hover:text-gold-light py-2 text-sm font-medium tracking-widest uppercase">Contact</a>
+        <div class="pt-4">
+          <a href="#reservations"
+            class="block w-full text-center border border-gold-base text-gold-base hover:bg-gold-base hover:text-charcoal py-3 text-xs font-semibold tracking-widest uppercase transition-all duration-300 rounded-sm">
+            Book a Table
+          </a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- 02. Hero Section -->
+<section class="relative bg-stone-950 text-stone-100 min-h-screen flex items-center justify-center overflow-hidden font-sans pt-24 pb-12 lg:py-0">
+  
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,#1c1917_1px,transparent_1px),linear-gradient(to_bottom,#1c1917_1px,transparent_1px)] bg-[size:5rem_5rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+
+  <div class="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-[30rem] h-[30rem] bg-orange-600/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-8 z-10">
     
+    <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+      
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-stone-900 border border-stone-800 text-xs font-mono tracking-widest text-amber-400 uppercase mb-6 shadow-inner">
+        <span class="flex h-1.5 w-1.5 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-amber-500"></span>
+        </span>
+        Now Seating for Dinner
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tight leading-tight text-white uppercase">
+        Crafting Culinary <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-amber-500 font-serif normal-case italic block sm:inline my-1 sm:my-0">Masterpieces</span> Daily
+      </h1>
+
+      <p class="mt-6 text-base sm:text-lg text-stone-400 max-w-xl font-light leading-relaxed">
+        Experience an exquisite fusion of local seasonal ingredients, contemporary gastronomy, and timeless atmosphere. Your perfect table awaits.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+        <button onclick="openAuthModal('register')"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-xs tracking-widest bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-stone-950 shadow-lg shadow-amber-500/10 active:scale-[0.99] transition-all uppercase">
+          Book A Table
+        </button>
+        <a href="#menu"
+          class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-xs tracking-widest bg-stone-900/80 hover:bg-stone-850 border border-stone-800 hover:border-stone-700 text-stone-200 text-center transition-all uppercase">
+          View Tonight's Menu
+        </a>
+      </div>
+    </div>
+
+    <div class="w-full lg:w-1/2 flex justify-center items-center">
+      <div class="relative w-150 h-150 sm:w-96 sm:h-96 group">
+        
+        <div class="w-full h-full bg-stone-900 border-primary-subtle border-stone-800 p-2 overflow-hidden shadow-2xl [clip-path:polygon(30%_0%,_83%_12%,_100%_43%,_85%_91%,_48%_100%,_11%_83%,_0%_38%)]">
+          <img 
+            src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600"
+            alt="Culinary Creation"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" 
+          />
+        </div>
+
+        <div class="absolute -top-2 -left-4 bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 text-[10px] font-black px-3 py-1.5 rounded-lg shadow-xl uppercase tracking-widest transform -rotate-6 select-none">
+          Chef's Special
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- 03. Recipes -->
+   <section id="recipes" class="relative bg-stone-950 text-stone-100 py-24 overflow-hidden font-sans">
+  
+  <div class="absolute inset-0 bg-[linear-gradient(to_right,#1c1917_1px,transparent_1px),linear-gradient(to_bottom,#1c1917_1px,transparent_1px)] bg-[size:6rem_6rem] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] opacity-60"></div>
+  <div class="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-stone-900 gap-6">
+      <div>
+        <span class="text-xs font-mono tracking-widest text-amber-400 uppercase">// From Our Kitchen Matrix</span>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white uppercase mt-2">
+          Secrets of the <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500 font-serif normal-case italic">Craft</span>
+        </h2>
+        <p class="text-stone-400 text-sm mt-2 max-w-md">Explore our signature dishes and try recreating our curated culinary masterpieces at home.</p>
+      </div>
+      
+      <div class="flex flex-wrap gap-2 text-xs font-mono font-bold uppercase tracking-wider">
+        <button class="px-4 py-2 rounded-lg bg-amber-500 text-stone-950 shadow-md">All Recipes</button>
+        <button class="px-4 py-2 rounded-lg bg-stone-900 border border-stone-800 text-stone-400 hover:text-white transition">Entrées</button>
+        <button class="px-4 py-2 rounded-lg bg-stone-900 border border-stone-800 text-stone-400 hover:text-white transition">Desserts</button>
+        <button class="px-4 py-2 rounded-lg bg-stone-900 border border-stone-800 text-stone-400 hover:text-white transition">Mixology</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-stone-900/40 border border-stone-900 rounded-2xl p-6 flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300 shadow-xl lg:col-span-1">
+        <div>
+          <div class="relative w-full aspect-square max-w-[280px] mx-auto mb-6">
+            <div class="w-full h-full bg-stone-900 border border-stone-800 p-1.5 overflow-hidden [clip-path:polygon(30%_0%,_83%_12%,_100%_43%,_85%_91%,_48%_100%,_11%_83%,_0%_38%)]">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=600" alt="Recipe Image" 
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
+            </div>
+            <span class="absolute -top-1 -left-2 bg-gradient-to-r from-amber-500 to-orange-500 text-stone-950 text-[10px] font-black px-2.5 py-1 rounded-md shadow-lg uppercase tracking-widest transform -rotate-6">
+              Chef's Pick
+            </span>
+          </div>
+
+          <div class="flex items-center gap-3 text-[10px] font-mono text-amber-400 uppercase tracking-widest">
+            <span>Prep: 45 Min</span>
+            <span class="text-stone-700">•</span>
+            <span>Advanced Level</span>
+          </div>
+          <h3 class="text-xl font-bold text-white uppercase tracking-tight mt-2 group-hover:text-amber-400 transition">Smoked Truffle Salmon Gnocchi</h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-2">Handmade potato pillows tossed inside rich black truffle compound cream butter with applewood precision cold-smoked salmon slices.</p>
+        </div>
+        <button class="w-full mt-6 py-3 rounded-xl bg-stone-950 hover:bg-stone-800 border border-stone-800 text-stone-200 text-xs font-bold uppercase tracking-wider transition">View Formula Specs</button>
+      </div>
+
+      <div class="bg-stone-900/40 border border-stone-900 rounded-2xl p-6 flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300 shadow-xl">
+        <div>
+          <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 border border-stone-800/80">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=600" alt="Recipe Image" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 bg-stone-950/80 backdrop-blur-md border border-stone-800 text-stone-300 text-[9px] font-mono px-2 py-0.5 rounded uppercase tracking-wider">
+              Italian Sector
+            </span>
+          </div>
+
+          <div class="flex items-center gap-3 text-[10px] font-mono text-stone-500 uppercase tracking-widest">
+            <span>Prep: 25 Min</span>
+            <span class="text-stone-700">•</span>
+            <span>Intermediate</span>
+          </div>
+          <h3 class="text-xl font-bold text-white uppercase tracking-tight mt-2 group-hover:text-amber-400 transition">Woodfired Artisan Neapolitan</h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-2">72-hour fermented sourdough base topped natively with San Marzano reduction smash logs, fresh dynamic mozzarella clots, and fresh garden basil.</p>
+        </div>
+        <button class="w-full mt-6 py-3 rounded-xl bg-stone-950 hover:bg-stone-800 border border-stone-800 text-stone-200 text-xs font-bold uppercase tracking-wider transition">View Formula Specs</button>
+      </div>
+
+      <div class="bg-stone-900/40 border border-stone-900 rounded-2xl p-6 flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300 shadow-xl">
+        <div>
+          <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 border border-stone-800/80">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=600" alt="Recipe Image" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 bg-stone-950/80 backdrop-blur-md border border-stone-800 text-stone-300 text-[9px] font-mono px-2 py-0.5 rounded uppercase tracking-wider">
+              Confectionary
+            </span>
+          </div>
+
+          <div class="flex items-center gap-3 text-[10px] font-mono text-stone-500 uppercase tracking-widest">
+            <span>Prep: 15 Min</span>
+            <span class="text-stone-700">•</span>
+            <span>Easy Assembly</span>
+          </div>
+          <h3 class="text-xl font-bold text-white uppercase tracking-tight mt-2 group-hover:text-amber-400 transition">Spiced Glaze Citrus Crème Glace</h3>
+          <p class="text-xs text-stone-400 mt-2 line-clamp-2">Madagascar vanilla bean custard base metrics paired with dark bourbon brown sugar shell melts and zesty orange reduction infusions.</p>
+        </div>
+        <button class="w-full mt-6 py-3 rounded-xl bg-stone-950 hover:bg-stone-800 border border-stone-800 text-stone-200 text-xs font-bold uppercase tracking-wider transition">View Formula Specs</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- 04. Testimonial Part -->
+<section id="testimonial" class="relative bg-stone-950 text-stone-100 py-20 border-t border-stone-900 overflow-hidden font-sans">
+  
+  <div class="relative max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+    
+    <div class="text-center mb-10">
+      <span class="text-xs font-mono tracking-widest text-amber-500 uppercase">// Verified Metrics</span>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 lg:gap-16 w-full pt-4">
+      
+      <div class="text-center md:text-left group border-l-2 border-stone-900 pl-4 md:pl-6 hover:border-amber-500 transition-colors duration-300">
+        <p class="text-4xl sm:text-5xl font-black text-white tracking-tight font-mono">100%</p>
+        <p class="text-[11px] text-stone-500 uppercase tracking-widest font-bold mt-2 font-mono">
+          <span class="text-amber-500">//</span> Fresh Ingredients
+        </p>
+      </div>
+      
+      <div class="text-center md:text-left group border-l-2 border-stone-900 pl-4 md:pl-6 hover:border-amber-500 transition-colors duration-300">
+        <p class="text-4xl sm:text-5xl font-black text-amber-500 tracking-tight font-mono">3</p>
+        <p class="text-[11px] text-stone-500 uppercase tracking-widest font-bold mt-2 font-mono">
+          <span class="text-amber-500">//</span> Master Chefs
+        </p>
+      </div>
+      
+      <div class="text-center md:text-left group border-l-2 border-stone-900 pl-4 md:pl-6 hover:border-amber-500 transition-colors duration-300">
+        <p class="text-4xl sm:text-5xl font-black text-amber-500 tracking-tight font-mono">25+</p>
+        <p class="text-[11px] text-stone-500 uppercase tracking-widest font-bold mt-2 font-mono">
+          <span class="text-amber-500">//</span> Fine Wines
+        </p>
+      </div>
+      
+      <div class="text-center md:text-left group border-l-2 border-stone-900 pl-4 md:pl-6 hover:border-amber-500 transition-colors duration-300">
+        <p class="text-4xl sm:text-5xl font-black text-emerald-500 tracking-tight font-mono">4.9★</p>
+        <p class="text-[11px] text-stone-500 uppercase tracking-widest font-bold mt-2 font-mono">
+          <span class="text-amber-500">//</span> Guest Rating
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 05. About us Section  -->
+   <section id="about" class="relative bg-stone-950 text-stone-100 py-24 border-t border-stone-900 overflow-hidden font-sans">
+  
+  <!-- Ambient Decorative Background Element -->
+  <div class="absolute bottom-0 left-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="relative max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      
+      <!-- LEFT COLUMN: Our Story & Philosophy -->
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+        <span class="text-xs font-mono tracking-widest text-amber-500 uppercase">// Our Heritage</span>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight text-white uppercase mt-2">
+          A Symphony of <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500 font-serif normal-case italic">Flavor & Passion</span>
+        </h2>
+        
+        <p class="mt-6 text-stone-400 text-sm sm:text-base leading-relaxed font-light">
+          Founded with a singular vision to redefine the modern dining grid, our kitchen blends ancestral open-flame cooking techniques with progressive culinary physics. Every menu configuration is a deliberate map of taste, texture, and visual design.
+        </p>
+        
+        <p class="mt-4 text-stone-500 text-sm leading-relaxed font-light">
+          We source all seasonal ingredients natively from regional farms practicing absolute sustainability. From our handmade reduction glazes to our custom oak-aged wine barrels, we invite you to experience gastronomy stripped of pretension and elevated by pure craft.
+        </p>
+
+        <!-- Signature / Accent Element -->
+        <div class="mt-8 flex items-center gap-4 border-l-2 border-amber-500 pl-4">
+          <div>
+            <p class="text-sm font-bold text-white uppercase tracking-wider">Chef Johnathon Swift</p>
+            <p class="text-xs font-mono text-stone-500">// Executive Culinary Director</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Visual Dynamic Grid -->
+      <div class="grid grid-cols-2 gap-4 relative">
+        <div class="space-y-4">
+          <div class="rounded-2xl overflow-hidden border border-stone-900 aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&q=80&w=400" alt="Kitchen Prep" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+          </div>
+          <div class="rounded-2xl overflow-hidden border border-stone-900 aspect-square bg-stone-900 flex flex-col justify-center p-6 text-center">
+            <p class="text-3xl font-black text-amber-500 font-mono">Est.</p>
+            <p class="text-xl font-bold text-white font-serif italic mt-1">2002</p>
+          </div>
+        </div>
+        <div class="space-y-4 pt-8">
+          <div class="rounded-2xl overflow-hidden border border-stone-900 aspect-square bg-gradient-to-br from-stone-900 to-stone-950 p-6 border-dashed border-stone-800 flex flex-col justify-center">
+            <p class="text-stone-400 font-mono text-xs uppercase tracking-widest">// Core Rule</p>
+            <p class="text-sm font-light text-stone-300 italic mt-2">"Complexity hidden inside flawless simplicity."</p>
+          </div>
+          <div class="rounded-2xl overflow-hidden border border-stone-900 aspect-[3/4]">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=400" alt="Dining Room" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- 06. Footer Section  -->
+   <footer class="bg-stone-950 text-stone-400 text-xs border-t border-stone-900 font-sans">
+  
+  <!-- Main Grid Links Area -->
+  <div class="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+    
+    <!-- Column 1: Brand & Identity -->
+    <div class="space-y-4">
+      <span class="text-white font-black text-xl tracking-wide uppercase">
+        Culinary<span class="text-amber-500 font-serif italic normal-case">Verse</span>
+      </span>
+      <p class="text-stone-500 leading-relaxed font-light pr-4">
+        An elite dining infrastructure system engineered for unforgettable sensory experiences.
+      </p>
+      <!-- Social Stream Icon Stubs -->
+      <div class="flex gap-3 text-stone-600">
+        <a href="#" class="hover:text-amber-400 transition">FB</a>
+        <span class="text-stone-800">/</span>
+        <a href="#" class="hover:text-amber-400 transition">IG</a>
+        <span class="text-stone-800">/</span>
+        <a href="#" class="hover:text-amber-400 transition">TW</a>
+      </div>
+    </div>
+
+    <!-- Column 2: Navigation Links Grid -->
+    <div class="space-y-3">
+      <h4 class="text-[11px] font-bold text-white uppercase tracking-widest font-mono text-amber-500">// Navigation</h4>
+      <ul class="space-y-2 font-light">
+        <li><a href="#about" class="hover:text-white transition-colors">Our Story</a></li>
+        <li><a href="#menu" class="hover:text-white transition-colors">Tonight's Menu</a></li>
+        <li><a href="#recipes" class="hover:text-white transition-colors">Formula Matrix</a></li>
+        <li><a href="#testimonial" class="hover:text-white transition-colors">Guest Metrics</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Structural Seating Hours -->
+    <div class="space-y-3">
+      <h4 class="text-[11px] font-bold text-white uppercase tracking-widest font-mono text-amber-500">// Dining Hours</h4>
+      <ul class="space-y-2 font-mono text-stone-500">
+        <li class="flex justify-between border-b border-stone-900/40 pb-1">
+          <span class="text-stone-400">Tue – Thu:</span>
+          <span>17:00 – 22:00</span>
+        </li>
+        <li class="flex justify-between border-b border-stone-900/40 pb-1">
+          <span class="text-stone-400">Fri – Sat:</span>
+          <span>17:00 – 23:30</span>
+        </li>
+        <li class="flex justify-between">
+          <span class="text-stone-400">Sunday:</span>
+          <span>16:00 – 21:00</span>
+        </li>
+        <li class="text-[10px] text-amber-500/70 italic font-sans pt-1">Mon: Closed for Menu Research</li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact Pipelines -->
+    <div class="space-y-3">
+      <h4 class="text-[11px] font-bold text-white uppercase tracking-widest font-mono text-amber-500">// Contact Protocol</h4>
+      <ul class="space-y-2 font-light">
+        <li class="text-stone-300 font-medium">Gulisthan-2, Dhaka, Bangladesh</li>
+        <li><a href="mailto:reserve@culinaryverse.com" class="hover:text-white font-mono text-stone-500">reserve@culinaryverse.com</a></li>
+        <li><p class="font-mono text-stone-500">+880 2-XXXXXXX</p></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom Copyright Baseline Bar -->
+  <div class="bg-stone-950 border-t border-stone-900/60 py-6 text-center text-stone-600 text-[11px] font-mono tracking-wide">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p>&copy; 2026 CodeScript Agencies Dev. All Rights Reserved.</p>
+      <div class="flex gap-4 text-stone-700">
+        <a href="/admin" class="hover:text-red-400 transition">// Terminal Session</a>
+        <a href="#" class="hover:text-stone-400 transition">Privacy System</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const dropdown = document.getElementById('mobile-dropdown');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuBtn.addEventListener('click', () => {
+      // Toggle the mobile dropdown visibility
+      dropdown.classList.toggle('hidden');
+
+      // Switch between the hamburger icon and the X close icon
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+
+    // Optional: Close dropdown automatically when clicking any mobile link
+    const mobileLinks = dropdown.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        dropdown.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+  </script>
 </body>
+
 </html>

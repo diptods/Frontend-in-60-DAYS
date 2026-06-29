@@ -57,13 +57,13 @@ Instead of only watching tutorials, I will learn new concepts every day and imme
 | Status |   Day  | Learning Topics                    | Project                              |
 | :----: | :----: | ---------------------------------- | ------------------------------------ |
 |    ✅   | Day 01 | HTML Basics, Document Structure    | Personal Introduction Page           |
-|    ✅   | Day 02 | Forms, Semantic HTML               | Student Registration System          |
-|    ⬜   | Day 03 | CSS Fundamentals                   | Coffee Shop Homepage                 |
-|    ⬜   | Day 04 | Flexbox                            | Netflix Landing Page Clone           |
-|    ⬜   | Day 05 | Responsive Design & Media Queries  | Restaurant Website                   |
-|    ⬜   | Day 06 | CSS Grid                           | Chocolate Store Product Showcase     |
-|    ⬜   | Day 07 | Revision + HTML/CSS Master Project | ChocoBite Complete Website           |
-|    ⬜   | Day 08 | Tailwind CSS Basics                | GameVerse Esports Tournament Website |
+|    ✅   | Day 02 | Forms, Semantic HTML               | Student Registration Form Website    |
+|    ✅   | Day 03 | CSS Fundamentals                   | Student Registration Form Website(CSS)  |
+|    ✅   | Day 04 | Flexbox                            | Student Registration Form Website Last    |
+|    ✅   | Day 05 | Responsive Design & Media Queries  | Student portfolio Website            |
+|    ✅   | Day 06 | CSS Grid                           | Premium Watch Company Websites     |
+|    ✅   | Day 07 | Revision + HTML/CSS Master Project | ChocoBite Complete Website           |
+|    ✅   | Day 08 | Tailwind CSS Basics                | Modern Restuarent Website           |
 |    ⬜   | Day 09 | Tailwind Layout & Components       | Modern Gym Website                   |
 |    ⬜   | Day 10 | Tailwind Responsive Design         | Tech Startup Website                 |
 |    ⬜   | Day 11 | Advanced Tailwind Components       | Real Estate Landing Page             |
