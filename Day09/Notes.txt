@@ -127,4 +127,172 @@ Project : Modern Gym Website
         flex-col            : It arranges the row as a column same as text direction but top to bottom. It is used to specify that the item has a normal top to bottom direction. It makes the item follow the normal top to bottom direction as we can see in the output.
         flex-col-reverse    : It arranges the row as a column same as row-reverse bottom to top. It is used to specify that the item has a normal bottom to top direction. It makes the item follow the normal bottom to top direction as we can see in the output.
 
-15. Tailwind CSS Flex Wrap
+15. Tailwind CSS Flex Wrap :
+    The CSS flexbox is a vital feature to develop the frontend, there are three wraps available in CSS so in tailwind CSS all the properties are covered as in class form. It is the alternative of CSS flex-wrap Property for fast development of front-end.
+        flex-wrap           : This class is used to break the flex item into multiples lines. It makes flex items wrap to multiple lines according to flex item width.
+        flex-nowrap         : The default value of wrap-flex is nowrap. It is used to specify that the item has no wrap. It makes item wrap in single lines.
+        flex-wrap-reverse   : This class is used to reverse the flow of the flex items when they wrap to new lines.
+16. Tailwind CSS Flex :
+    The CSS flexbox is a vital feature to develop the frontend, there is four flex available in tailwind CSS all the properties are covered as in class form. It is the alternative of CSS flex Property for fast development of front-end. It is used to set the length of flexible items. The flex class is much responsive and mobile-friendly. It is easy to positioning child elements and the main container. The margin doesn’t collapse with the content margins. The order of any element can be easily changed without editing the HTML section.
+        flex-1          : A ratio that specifies, how much items will grow relative to the rest of the flexible items. It has been used to allow a flex item to grow and shrink as needed, ignoring its initial size.
+        flex-initial    : This class defines how much that item will grow relative to the rest of the flexible items. It has been used to allow a flex item to shrink but not grow, taking into account its initial size
+        flex-auto       : This class specifies, how much that item will grow relative to the content of the flexible items. It has been used to allow a flex item to grow and shrink as needed, ignoring its initial size
+        flex-none       : This class set the restriction to growing or shrinking the element if extra space available or not. This is to prevent a flex item from growing or shrinking, it only takes the space according to the size of the content
+
+17. Tailwind CSS Flex Grow: 
+        flex-grow-0     : This class restricts the growing feature, it has the ability of an item to grow compared to content present inside the same container.
+        flex-grow       : This class does not restrict the growing feature, it has the ability of an item to grow compared to the space left on the screen.
+
+18. Tailwind CSS Flex Shrink :
+        flex-shrink-0: This class is used to prevent the shrinking of an element.
+        flex-shrink: This class is used to shrink an element.
+        
+19. Tailwind CSS Order :
+        order-1  |  order-2   |  order-3  |  order-4  |  order-5  |  order-6  |
+        order-7  |  order-8   |  order-9  |  order-10 |  order-11 |  order-12 |
+        order-first  |  order-last  |  order-none |
+
+ ####       Tailwind CSS Grid       #### 
+
+20. Tailwind CSS Grid Template Columns :
+        grid-cols-1: Each row concedes only one column.
+        grid-cols-2:  Each row concedes only two columns.
+        grid-cols-3:  Each row concedes only three columns.
+        grid-cols-4:  Each row concedes only four columns.
+        grid-cols-5:  Each row concedes only five columns.
+        grid-cols-6:  Each row concedes six columns.
+        grid-cols-7: Each row concedes seven-columns.
+        grid-cols-8: Each row concedes eight columns.
+        grid-cols-9: Each row concedes nine columns.
+        grid-cols-10: Each row concedes ten columns.
+        grid-cols-11: Each row concedes eleven columns.
+        grid-cols-12: Each row concedes twelve columns.
+        grid-cols-none: Does not follow the grid-column property.
+
+21. Tailwind CSS Grid Column Start / End :
+        col-auto    |   col-span-1  |   col-span-2  |   col-span-3  |   col-span-4  |   col-span-5  |   col-span-6  |   col-span-7  |   col-span-8  |   col-span-9      |   col-span-10     |   col-span-11     |   col-span-12   |   col-span-full 
+        col-start-auto  |   col-start-1     |   col-start-2     |   col-start-3     |   col-start-4     |   col-start-5     |   col-start-6     |   col-start-7     |   col-start-8     |   col-start-9     |   col-start-10    |   col-start-11    |   col-start-12    |   col-start-13
+        col-end-auto    |   col-end-1   |   col-end-2   |   col-end-3   |   col-end-4   |   col-end-5   |   col-end-6   |   col-end-7   |   col-end-8   |   col-end-9   |   col-end-10  |   col-end-11  |   col-end-12  |   col-end-13
+
+22. Tailwind CSS Grid Template Rows :
+        grid-rows-1: Each row concedes only one row.
+        grid-rows-2: Each row concedes only two rows.
+        grid-rows-3: Each row concedes only three rows.
+        grid-rows-4: Each row concedes only four rows.
+        grid-rows-5: Each row concedes only five rows.
+        grid-rows-6: Each row concedes six rows.
+        grid-rows-none: Does not follow the grid-row property.
+        
+23. Tailwind CSS Grid Row Start / End :
+        row-auto , row-span-1 , row-span-2 , row-span-3 , row-span-4 , row-span-5, row-span-6, row-span-7, row-span-8, row-span-9, row-span-10, row-span-11, row-span-12, row-span-full
+        row-start-1, row-start-2, row-start-3, row-start-4 , row-start-5, row-start-6, row-start-7, row-start-8, row-start-9, row-start-10, row-start-11, row-start-12 , row-start-13, row-start-auto
+        row-end-1, row-end-2, row-end-3, row-end-4, row-end-5, row-end-6, row-end-7, row-end-8, row-end-9, row-end-10, row-end-11, row-end-12, row-end-13, row-end-auto
+
+24. Tailwind CSS Grid Auto Flow :
+        grid-flow-row       :   Auto-placement algorithm place the items by filling each row in turn, adding new rows as necessary.
+        grid-flow-col       :   Auto-placement algorithm place the items by filling each column in turn, adding new columns as necessary.
+        grid-flow-row-dense :   Specifying that the auto-placement algorithm uses a "dense" packing algorithm for the column.
+        grid-flow-col-dense :   Specifying that the auto-placement algorithm uses a "dense" packing algorithm for rows.
+
+25. Tailwind CSS Grid Auto Columns :
+        auto-cols-auto  :   It is the default value. The size is determined implicitly according to the size of the container.
+        auto-cols-min   :   It specifies the size depending on the smallest item in the container.
+        auto-cols-max   :   It specifies the size depending on the largest item in the container.
+        auto-cols-fr    :   It specifies the size in the range of [min, max] greater than or equal to min and less than or equal to max.
+
+26. Tailwind CSS Grid Auto Rows :
+        auto-rows-auto  :   It is the default value. The size is determined implicitly according to the size of the container.
+        auto-rows-min   :   It specifies the size depending on the smallest item in the container.
+        auto-rows-max   :   It specifies the size depending on the largest item in the container.
+        auto-rows-fr    :   It specifies the size in the range of [min, max] greater than or equal to min and less than or equal to max.
+
+27. Tailwind CSS Gap :
+        | gap-0 / gap-x-0 / gap-y-0 | 0rem | 0px |
+        | gap-px / gap-x-px / gap-y-px | 1px | 1px |
+        | gap-0.5 / gap-x-0.5 / gap-y-0.5 | 0.125rem | 2px |
+        | gap-1 / gap-x-1 / gap-y-1 | 0.25rem | 4px |
+        | gap-1.5 / gap-x-1.5 / gap-y-1.5 | 0.375rem | 6px |
+        | gap-2 / gap-x-2 / gap-y-2 | 0.5rem | 8px |
+        | gap-2.5 / gap-x-2.5 / gap-y-2.5 | 0.625rem | 10px |
+        | gap-3 / gap-x-3 / gap-y-3 | 0.75rem | 12px |
+        | gap-3.5 / gap-x-3.5 / gap-y-3.5 | 0.875rem | 14px |
+        | gap-4 / gap-x-4 / gap-y-4 | 1rem | 16px |
+        | gap-5 / gap-x-5 / gap-y-5 | 1.25rem | 20px |
+        | gap-6 / gap-x-6 / gap-y-6 | 1.5rem | 24px |
+        | gap-7 / gap-x-7 / gap-y-7 | 1.75rem | 28px |
+        | gap-8 / gap-x-8 / gap-y-8 | 2rem | 32px |
+        | gap-9 / gap-x-9 / gap-y-9 | 2.25rem | 36px |
+        | gap-10 / gap-x-10 / gap-y-10 | 2.5rem | 40px |
+        | gap-11 / gap-x-11 / gap-y-11 | 2.75rem | 44px |
+        | gap-12 / gap-x-12 / gap-y-12 | 3rem | 48px |
+        | gap-14 / gap-x-14 / gap-y-14 | 3.5rem | 56px |
+        | gap-16 / gap-x-16 / gap-y-16 | 4rem | 64px |
+        | gap-20 / gap-x-20 / gap-y-20 | 5rem | 80px |
+        | gap-24 / gap-x-24 / gap-y-24 | 6rem | 96px |
+        | gap-28 / gap-x-28 / gap-y-28 | 7rem | 112px |
+        | gap-32 / gap-x-32 / gap-y-32 | 8rem | 128px |
+        | gap-36 / gap-x-36 / gap-y-36 | 9rem | 144px |
+        | gap-40 / gap-x-40 / gap-y-40 | 10rem | 160px |
+        | gap-44 / gap-x-44 / gap-y-44 | 11rem | 176px |
+        | gap-48 / gap-x-48 / gap-y-48 | 12rem | 192px |
+        | gap-52 / gap-x-52 / gap-y-52 | 13rem | 208px |
+        | gap-56 / gap-x-56 / gap-y-56 | 14rem | 224px |
+        | gap-60 / gap-x-60 / gap-y-60 | 15rem | 240px |
+        | gap-64 / gap-x-64 / gap-y-64 | 16rem | 256px |
+        | gap-72 / gap-x-72 / gap-y-72 | 18rem | 288px |
+        | gap-80 / gap-x-80 / gap-y-80 | 20rem | 320px |
+        | gap-96 / gap-x-96 / gap-y-96 | 24rem | 384px |
+
+####  Tailwind CSS Alignment #####
+
+28. Tailwind CSS Justify Content: 
+        justify-start
+        justify-end 
+        justify-center 
+        justify-between 
+        justify-around 
+        justify-evenly 
+
+29. Tailwind CSS Justify Items:
+        justify-items-auto 
+        justify-items-start 
+        justify-items-end 
+        justify-items-center 
+        justify-items-stretch 
+
+30. Tailwind CSS Justify Self   :
+        justify-self-auto 
+        justify-self-start 
+        justify-self-end 
+        justify-self-center 
+        justify-self-stretch 
+
+31. Tailwind CSS Align Content :
+        content-center 
+        content-start 
+        content-end 
+        content-between 
+        content-around 
+        content-evenly 
+
+32. Tailwind CSS Align Items:
+        items-start 
+        items-end 
+        items-center 
+        items-baseline 
+        items-stretch
+
+33. Tailwind CSS Align Self:
+        self-auto 
+        self-start 
+        self-end 
+        self-center 
+        self-stretch 
+
+34. Tailwind CSS Background Size:
+        bg-auto
+        bg-cover
+        bg-contain
+35........{many more from [https://www.geeksforgeeks.org/css/tailwind-css/]}
+
+

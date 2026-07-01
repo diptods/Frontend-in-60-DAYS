@@ -1,0 +1,13 @@
+@theme {
+    /* Custom brand colors matching the gold logo theme */
+    --color-gold-light: #f4e8c1;
+    --color-gold-base: #c5a880;
+    --color-gold-dark: #a3845b;
+    --color-charcoal: #121212;
+}
+/* .logo{
+    height: auto;
+    width: 13%;
+    size: 10rem;
+    background-color: black;
+} */
